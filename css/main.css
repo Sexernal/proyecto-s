@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Estilos generales del menú */
+.navbar {
+    background-color: #8b0b4a; /* Morado Saprissa */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Para posicionar correctamente los submenús */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho del contenedor */
+    margin: 0; /* Centra el contenedor */
+    margin-right: auto;
+}
+
+.logo img {
+    display: flex;
+    justify-content: flex-start;
+    height: 90px; /* Tamaño del logo */
+    width: auto; /* Mantiene la proporción */
+    transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+    justify-content: flex-start;
+}
+
+/* Efecto de escala al pasar el mouse (opcional) */
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+/* Estilos del menú principal */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.navbar-menu li {
+    position: relative;
+}
+
+.navbar-menu a {
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+    font-size: 17px; /* Tamaño de la letra */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Fuente */
+    letter-spacing: 1px; /* Separación entre letras */
+}
+
+/* Efecto dorado al pasar el mouse */
+.navbar-menu a:hover {
+    color: #ffd700; /* Texto dorado */
+    background-color: transparent; /* Eliminamos el fondo oscuro */
+    text-decoration: underline; /* Subrayado */
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8b0b4a; /* Morado Saprissa */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white; /* Texto blanco */
+}
+
+.submenu li a:hover {
+    color: #ffd700; /* Texto dorado */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Contenido adicional en columnas (solo en escritorio) */
+.contenido-adicional {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.contenido-adicional .columna {
+    display: flex;
+    margin-left: 15px; /* Empuja el bloque a la derecha */
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.contenido-adicional a {
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    font-size: 12px; /* Tamaño de la letra */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Fuente */
+    letter-spacing: auto; /* Separación entre letras */
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.contenido-adicional a:hover {
+    color: #ffd700; /* Texto dorado */
+}
+
+/* Ícono de hamburguesa (para móviles) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .hamburger {
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-menu, .contenido-adicional {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #8b0b4a; /* Morado Saprissa */
+        position: absolute;
+        top: 100%; /* Coloca el menú debajo del navbar */
+        left: 0;
+        z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    }
+
+    .navbar-menu.active, .contenido-adicional.active {
+        display: flex;
+    }
+
+    .navbar-menu li, .contenido-adicional a {
+        text-align: center;
+        padding: 10px 0; /* Espaciado vertical */
+    }
+
+    .contenido-adicional .columna {
+        flex-direction: column; /* En móviles, las columnas se muestran en una lista vertical */
+    }
+}
