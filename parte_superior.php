@@ -70,5 +70,7 @@
     </div>
 </nav>
 
-<script src="./js/script.js"></script>
+<script src="./js/hamburger.js"></script>
+<script src="./js/accordion.js"></script>
+
 </body>
