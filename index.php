@@ -114,4 +114,64 @@
     </div>
 </section>
 
+
+<!-- Sección de Fotos y Videos -->
+<section id="galeria" class="galeria">
+    <div class="galeria-container">
+        <!-- Carrusel de Fotos -->
+        <div class="fotos-container">
+            <h2>Fotos</h2>
+            <div class="carrusel-fotos">
+                <!-- Foto 1 -->
+                <div class="carrusel-item active">
+                    <img src="imagen/foto1.jpg" alt="Estadio Ricardo Saprissa">
+                    <div class="carrusel-desc">
+                        <p>El estadio Ricardo Saprissa, conocido como "La Cueva".</p>
+                    </div>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="carrusel-item">
+                    <img src="imagen/foto2.jpg" alt="Celebración de los jugadores">
+                    <div class="carrusel-desc">
+                        <p>¡Los jugadores celebran una victoria importante!</p>
+                    </div>
+                </div>
+
+                <!-- Agrega más fotos aquí -->
+            </div>
+        </div>
+
+        <!-- Carrusel de Videos -->
+        <div class="videos-container">
+            <h2>Videos</h2>
+            <div class="carrusel-videos">
+                <!-- Video 1 -->
+                <div class="carrusel-item active">
+                    <video controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="carrusel-desc">
+                        <p>Golazo de Chope en su debut con el Saprissa.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="carrusel-item">
+                    <video controls>
+                        <source src="videos/video2.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="carrusel-desc">
+                        <p>Entrevista exclusiva con el nuevo fichaje del Saprissa.</p>
+                    </div>
+                </div>
+
+                <!-- Agrega más videos aquí -->
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php require_once "./parte_inferior.php" ?>

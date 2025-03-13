@@ -72,5 +72,6 @@
 
 <script src="./js/hamburger.js"></script>
 <script src="./js/accordion.js"></script>
-
+<script src="./js/carrusel-fotos.js"></script>
+<script src="./js/carrusel-videos.js"></script>
 </body>

@@ -3,19 +3,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const dataAccordion = [
         {
-            title: "Chope ya esta en Saprissa",
-            desc: "En su primer entrenamiento junto a su asistente tecnico Gilberto Martinez preparandose para su primera prueba de fuego contra San carlos",
+            title: "Chope ya esta en Saprissa.",
+            desc: "En su primer entrenamiento junto a su asistente técnico Gilberto Martínez están preparándose para su primer prueba de fuego contra San Carlos.",
             videoId: "zmgdz4syZRY" // Reemplaza con el ID de YouTube
         },
         {
-            title: "GANO el mounstro morado saco su casta de campeon en la cueva y golea",
-            desc: "Entrevista exclusiva con Juan Pérez, el nuevo delantero del Saprissa.",
+            title: "GANO el monstruo morado saco su casta de campeón en la cueva y golea.",
+            desc: "En el debut de Paulo Cesar dirigiendo a saprissa golea y muestra una cara diferente de la que venía mostrando saprissa.",
             videoId: "2jyXCttLxS0" // Reemplaza con el ID de YouTube
         },
         {
-            title: "🏆 Saprissa avanza en la Copa",
-            desc: "El equipo morado logró su pase a la siguiente ronda de la Copa después de vencer a...",
-            videoId: "VIDEO_ID_3" // Reemplaza con el ID de YouTube
+            title: "Ariel Francisco Rodríguez la leyenda viviente del deportivo saprissa",
+            desc: "Con su doblete ante San Carlos El samurái se convirtió en el segundo máximo goleador en liga de la historia del saprissa solo por detrás de el caballero del fútbol.",
+            videoId: "ABuAWv5mXYA" // Reemplaza con el ID de YouTube
         },
     ];
 
