@@ -24,12 +24,34 @@ document.addEventListener('DOMContentLoaded', function () {
             showItem(currentIndex);
         }
 
+        function prevItem() {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            showItem(currentIndex);
+        }
+
         function startAutoChange() {
             if (intervalTime) {
                 autoChangeInterval = setInterval(() => {
                     nextItem();
                 }, intervalTime);
             }
+        }
+
+        // Agregar controles manuales
+        const prevButton = carrusel.querySelector('.prev');
+        const nextButton = carrusel.querySelector('.next');
+
+        if (prevButton && nextButton) {
+            prevButton.addEventListener('click', () => {
+                clearInterval(autoChangeInterval); // Se reinicia el intervalo
+                prevItem();
+                startAutoChange();
+            });
+            nextButton.addEventListener('click', () => {
+                clearInterval(autoChangeInterval);
+                nextItem();
+                startAutoChange();
+            });
         }
 
         // Iniciar el carrusel

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 item.classList.remove('active');
                 if (i === index) {
                     item.classList.add('active');
-                    // Si es un video, reiniciar la reproducción
+                    // Reiniciar y reproducir el video
                     const video = item.querySelector('video');
                     if (video) {
                         video.currentTime = 0;
@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             nextItem();
                         };
                     }
+                } else {
+                    // Pausar video en items que no son activos
+                    const video = item.querySelector('video');
+                    if (video) {
+                        video.pause();
+                    }
                 }
             });
         }
@@ -31,6 +37,34 @@ document.addEventListener('DOMContentLoaded', function () {
         function nextItem() {
             currentIndex = (currentIndex + 1) % totalItems;
             showItem(currentIndex);
+        }
+
+        function prevItem() {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            showItem(currentIndex);
+        }
+
+        // Agregar controles manuales
+        const prevButton = carrusel.querySelector('.prev');
+        const nextButton = carrusel.querySelector('.next');
+
+        if (prevButton && nextButton) {
+            prevButton.addEventListener('click', function() {
+                // Pausar el video actual (si lo hay)
+                const currentVideo = items[currentIndex].querySelector('video');
+                if (currentVideo) {
+                    currentVideo.pause();
+                }
+                prevItem();
+            });
+
+            nextButton.addEventListener('click', function() {
+                const currentVideo = items[currentIndex].querySelector('video');
+                if (currentVideo) {
+                    currentVideo.pause();
+                }
+                nextItem();
+            });
         }
 
         // Iniciar el carrusel
