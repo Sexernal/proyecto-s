@@ -266,31 +266,231 @@
         <!-- Contenido de Jugadores -->
         <div id="jugadores" class="tab-content active">
             <div class="tarjeta">
-                <img src="imagen/jugadores/jugador1.jpg" alt="Jugador 1">
-                <h3>Nombre del Jugador</h3>
-                <p>Posición: Delantero</p>
-                <p>Número: 10</p>
+                <img src="imagen/jugadores/alvarado" alt="primer portero">
+                <h3>Esteban Alvarado</h3>
+                <p>Posición: Portero</p>
+                <p>Número: 18</p>
             </div>
             <div class="tarjeta">
-                <img src="imagen/jugadores/jugador2.jpg" alt="Jugador 2">
-                <h3>Nombre del Jugador</h3>
-                <p>Posición: Defensa</p>
+                <img src="imagen/jugadores/madriz" alt="segundo portero">
+                <h3>Abraham Madriz</h3>
+                <p>Posición: Portero</p>
+                <p>Número: 40</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/alfaro" alt="tercer portero">
+                <h3>Isaac alfaro</h3>
+                <p>Posición: Portero</p>
+                <p>Número: 13</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/duarte" alt="central titular">
+                <h3>Óscar Duarte</h3>
+                <p>Posición: Defensa Central</p>
+                <p>Número: 6</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/anderson" alt="central titular">
+                <h3>Eduardo Anderson</h3>
+                <p>Posición: Defensa Central</p>
+                <p>Número: 16</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/sequeira" alt="central suplente">
+                <h3>Douglas Sequeira</h3>
+                <p>Posición: Defensa Central</p>
+                <p>Número: 30</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/waston" alt="central titular">
+                <h3>Kendall Waston</h3>
+                <p>Posición: Defensa Central</p>
+                <p>Número: 4</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/mora" alt="lateral izquierdo titular">
+                <h3>Joseph Mora</h3>
+                <p>Posición: Lateral Izquierdo</p>
                 <p>Número: 5</p>
             </div>
-            <!-- Agrega más jugadores aquí -->
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/valverde" alt="lateral izquierdo suplente">
+                <h3>Jefry Valverde</h3>
+                <p>Posición: Lateral Izquierdo</p>
+                <p>Número: 7</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/bolaños" alt="lateral izquierdo suplente">
+                <h3>Ryan Bolaños</h3>
+                <p>Posición: Lateral Izquierdo</p>
+                <p>Número: 19</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/samir" alt="lateral derecho suplente">
+                <h3>Samir Taylor</h3>
+                <p>Posición: Lateral derecho</p>
+                <p>Número: 42</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/myrie" alt="lateral derecho titular">
+                <h3>Kenay Myrie</h3>
+                <p>Posición: Lateral derecho</p>
+                <p>Número: 33</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/blanco" alt="lateral derecho suplente">
+                <h3>Ricardo Blanco</h3>
+                <p>Posición: Lateral derecho</p>
+                <p>Número: 12</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/fidel" alt="pivote titular">
+                <h3>Fidel Escobar</h3>
+                <p>Posición: Pivote</p>
+                <p>Número: 21</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/acuña" alt="pivote titular">
+                <h3>Sebastián Acuña</h3>
+                <p>Posición: Pivote</p>
+                <p>Número: 25</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/guzman" alt="pivote titular">
+                <h3>David Guzmán</h3>
+                <p>Posición: Pivote</p>
+                <p>Número: 8</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/brenes" alt="mediocentro titular">
+                <h3>Jefferson Brenes</h3>
+                <p>Posición: Mediocentro</p>
+                <p>Número: 10</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/hernandez" alt="mediocrentro suplente">
+                <h3>Yorseth Hernández</h3>
+                <p>Posición: Mediocentro</p>
+                <p>Número: 17</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/torres" alt="mediocentro ofensivo titular">
+                <h3>Mariano Torres</h3>
+                <p>Posición: Mediocentro Ofensivo</p>
+                <p>Número: 20</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/vivi" alt="Extremo Izquierdo suplente">
+                <h3>Gino Vivi</h3>
+                <p>Posición: Extremo Izquierdo</p>
+                <p>Número: 37</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/paquete" alt="Extremo Izquierdo PAQUETE">
+                <h3>Nicolás Paquetillo</h3>
+                <p>Posición: Extremo Izquierdo</p>
+                <p>Número: 32</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/loria" alt="Extremo Derecho Titular">
+                <h3>Marvin Loría</h3>
+                <p>Posición: Extremo Derecho</p>
+                <p>Número: 11</p>
+            </div>
+            
+            <div class="tarjeta">
+                <img src="imagen/jugadores/gerson" alt="Extremo Derecho Titular">
+                <h3>Gerson Torres</h3>
+                <p>Posición: Extremo Derecho</p>
+                <p>Número: 28</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/vega" alt="Extremo Derecho Suplente">
+                <h3>Deyver Vega</h3>
+                <p>Posición: Extremo Derecho</p>
+                <p>Número: 15</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/merino" alt="Delantero Paquete">
+                <h3>Sabin Merino</h3>
+                <p>Posición: Delantero</p>
+                <p>Número: 9</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/sinclair" alt="Delantero Super Paquete">
+                <h3>Orlando Sinclair</h3>
+                <p>Posición: Delantero</p>
+                <p>Número: 24</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/aleman" alt="El Paquete Mayor">
+                <h3>Fabricio Alemán</h3>
+                <p>Posición: Delantero</p>
+                <p>Número: 31</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/jugadores/ariel" alt="LEYENDA">
+                <h3>Ariel Rodríguez</h3>
+                <p>Posición: Delantero</p>
+                <p>Número: 14</p>
+            </div>
+            <!-- Agrega más judores aquí -->
         </div>
 
         <!-- Contenido de Cuerpo Técnico -->
         <div id="cuerpo-tecnico" class="tab-content">
             <div class="tarjeta">
-                <img src="imagen/cuerpo-tecnico/tecnico1.jpg" alt="Entrenador">
-                <h3>Nombre del Entrenador</h3>
-                <p>Rol: Entrenador Principal</p>
+                <img src="imagen/cuerpo-tecnico/wanchope" alt="Entrenador">
+                <h3>Paulo Wanchope</h3>
+                <p>Rol: Entrenador</p>
             </div>
             <div class="tarjeta">
-                <img src="imagen/cuerpo-tecnico/tecnico2.jpg" alt="Asistente">
-                <h3>Nombre del Asistente</h3>
+                <img src="imagen/cuerpo-tecnico/tuma" alt="Entrenador asistente">
+                <h3>Gilberto Martínez</h3>
                 <p>Rol: Asistente Técnico</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/cuerpo-tecnico/villalobos" alt="Entrenador asistente">
+                <h3>Gabriel Villalobos</h3>
+                <p>Rol: Asistente Técnico</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/cuerpo-tecnico/daniel" alt="Acondicionamiento Fisico">
+                <h3>Daniel Torres</h3>
+                <p>Rol: Acondicionamiento Físico</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagen/cuerpo-tecnico/rafael" alt="Entrenador de Rehabilitacion">
+                <h3>Rafael Herrera</h3>
+                <p>Rol: Entrenador de Rehabilitación</p>
             </div>
             <!-- Agrega más miembros del cuerpo técnico aquí -->
         </div>
