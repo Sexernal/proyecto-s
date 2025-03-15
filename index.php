@@ -252,4 +252,49 @@
     </div>
 </section>
 
+<!-- Sección de Plantilla Actual -->
+<section id="plantilla" class="plantilla">
+    <div class="plantilla-container">
+        <h2>Plantilla Actual</h2>
+
+        <!-- Submenús -->
+        <div class="submenu-plantilla">
+            <button class="tab-button active" data-tab="jugadores">Jugadores</button>
+            <button class="tab-button" data-tab="cuerpo-tecnico">Cuerpo Técnico</button>
+        </div>
+
+        <!-- Contenido de Jugadores -->
+        <div id="jugadores" class="tab-content active">
+            <div class="tarjeta">
+                <img src="imagen/jugadores/jugador1.jpg" alt="Jugador 1">
+                <h3>Nombre del Jugador</h3>
+                <p>Posición: Delantero</p>
+                <p>Número: 10</p>
+            </div>
+            <div class="tarjeta">
+                <img src="imagen/jugadores/jugador2.jpg" alt="Jugador 2">
+                <h3>Nombre del Jugador</h3>
+                <p>Posición: Defensa</p>
+                <p>Número: 5</p>
+            </div>
+            <!-- Agrega más jugadores aquí -->
+        </div>
+
+        <!-- Contenido de Cuerpo Técnico -->
+        <div id="cuerpo-tecnico" class="tab-content">
+            <div class="tarjeta">
+                <img src="imagen/cuerpo-tecnico/tecnico1.jpg" alt="Entrenador">
+                <h3>Nombre del Entrenador</h3>
+                <p>Rol: Entrenador Principal</p>
+            </div>
+            <div class="tarjeta">
+                <img src="imagen/cuerpo-tecnico/tecnico2.jpg" alt="Asistente">
+                <h3>Nombre del Asistente</h3>
+                <p>Rol: Asistente Técnico</p>
+            </div>
+            <!-- Agrega más miembros del cuerpo técnico aquí -->
+        </div>
+    </div>
+</section>
+
 <?php require_once "./parte_inferior.php" ?>

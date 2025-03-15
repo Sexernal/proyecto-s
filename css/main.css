@@ -437,7 +437,7 @@ body {
     margin-top: 40px; /* Separación de la sección anterior */
     margin-bottom: 40px; /* Separación de la siguiente sección */
     border-top: 2px solid #8b0b4a; /* Borde superior morado Saprissa */
-    border-bottom: 2px solid #8b0b4a; /* Borde inferior morado Saprissa */
+    
 }
 
 .galeria-container {
@@ -508,6 +508,95 @@ body {
     right: 10px;
 }
 
+
+
+/* Estilos para la sección de Plantilla Actual */
+.plantilla {
+    padding: 60px 20px;
+    background-color: #d8bfd8; /* Morado claro */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 2px solid #8b0b4a; /* Borde superior morado Saprissa */
+    border-bottom: 2px solid #8b0b4a; /* Borde inferior morado Saprissa */
+}
+
+.plantilla h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 20px;
+}
+
+/* Submenús */
+.submenu-plantilla {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.submenu-plantilla .tab-button {
+    background-color: #8b0b4a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submenu-plantilla .tab-button.active {
+    background-color: #6a0940; /* Morado más oscuro */
+}
+
+.submenu-plantilla .tab-button:hover {
+    background-color: #6a0940; /* Morado más oscuro */
+}
+
+/* Contenido de las Tabs */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    font-size: 1.2rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 
 /* Estilos responsivos del hamburger*/
