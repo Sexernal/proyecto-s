@@ -46,7 +46,7 @@
                         <li><a href="#cuerpo-tecnico">Cuerpo Técnico</a></li>
                     </ul>
                 </li>
-                <li><a href="#hinchada">La Hinchada</a></li>
+                <li><a href="#ultra-morada">Ultra Morada</a></li>
                 <li class="dropdown">
                     <a href="#rivalidades">Las Rivalidades</a>
                     <ul class="submenu">
@@ -76,4 +76,26 @@
     <script src="./js/carrusel-fotos.js"></script>
     <script src="./js/carrusel-videos.js"></script>
     <script src="./js/tabs.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/lightbox-plantilla.js"></script>
+
+    <!-- Script para el desplazamiento suave -->
+    <script>
+        // Desplazamiento suave para los enlaces del menú
+        document.querySelectorAll('.navbar-menu a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Evita el comportamiento predeterminado
+                const targetId = this.getAttribute('href'); // Obtiene el ID de la sección
+                const targetSection = document.querySelector(targetId); // Selecciona la sección
+
+                if (targetSection) {
+                    // Desplaza suavemente a la sección
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
