@@ -546,13 +546,22 @@
         <!-- Texto Explicativo -->
         <div class="texto-explicativo">
             <p>
-                La Ultra Morada es la barra brava oficial del Deportivo Saprissa, fundada en [año de fundación].
-                Conocidos por su pasión inquebrantable y su apoyo incondicional al equipo, los miembros de la Ultra Morada
-                son un pilar fundamental en cada partido, llenando el Estadio Ricardo Saprissa de energía y color.
+                La Ultra Morada fue formada en el año 1995, año en el cual el Deportivo Saprissa disputara la Copa
+                Interamericana contra la Universidad Católica de Chile en partido de ida y vuelta. Este torneo finalmente
+                lo ganaría la Católica en tiempo de reposición ya en el segundo partido disputado en el San Carlos de
+                Apoquindo, Chile.
             </p>
             <p>
-                Su lema, "Por la S hasta la muerte", refleja el compromiso y la dedicación de esta hinchada, que ha
-                acompañado al Saprissa en sus momentos más gloriosos y también en los más difíciles.
+                Para este partido es que se empezaría a concretar la idea de formar una barra organizada para el club, ya
+                que antes de esto siempre se habían visto muestras de apoyo pero de manera dispersa por parte de los
+                aficionados de diferentes clubes, pero sin que en ninguno se conformaran barras organizadas.
+            </p>
+            <p>
+                La barra en un inicio marcó todo un boom deportivo e incluso comercial, donde fue tema de conversación
+                dentro de los medios de comunicación, y no era de extrañar los reportajes sobre la barra y mucho menos la
+                gran cantidad de productos que se hicieron para comercializarla, esto porque surgió en un momento en que el
+                equipo parecía que podía caer en los malos resultados a poco tiempo de finalizar el torneo lo cual con la
+                ayuda y el apoyo de la barra se le dio el soporte para lograr el bicampeonato.
             </p>
         </div>
 
@@ -561,10 +570,31 @@
             <h3>Galería de la Ultra Morada</h3>
             <div class="imagenes-ultra">
                 <div class="imagen-container">
-                    <img src="imagen/pate.jpg" alt="Ultra Morada en el estadio" class="imagen-galeria">
+                    <img src="imagen/ultra-morada/1.jpg" alt="Ultra Morada en el estadio" class="imagen-galeria">
                 </div>
                 <div class="imagen-container">
-                    <img src="imagen/ultra-morada/ultra2.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
+                    <img src="imagen/ultra-morada/2.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
+                </div>
+                <div class="imagen-container">
+                    <img src="imagen/ultra-morada/3.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
+                </div>
+                <div class="imagen-container">
+                    <img src="imagen/ultra-morada/4.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
+                </div>
+                <div class="imagen-container">
+                    <img src="imagen/ultra-morada/5.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
+                </div>
+                <div class="imagen-container">
+                    <img src="imagen/ultra-morada/6.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
+                </div>
+                <div class="imagen-container">
+                    <img src="imagen/ultra-morada/7.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
+                </div>
+                <div class="imagen-container">
+                    <img src="imagen/ultra-morada/8.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
+                </div>
+                <div class="imagen-container">
+                    <img src="imagen/ultra-morada/9.jpg" alt="Celebraciones de la Ultra Morada" class="imagen-galeria">
                 </div>
                 <!-- Agrega más imágenes aquí -->
             </div>
