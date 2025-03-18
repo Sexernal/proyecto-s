@@ -15,7 +15,7 @@
     <nav class="navbar">
         <div class="navbar-container">
             <!-- Logo -->
-            <a href="#" class="logo">
+            <a href="index.php" class="logo">
                 <img src="imagen/mounstro.png" alt="Logo Saprissa">
             </a>
 
@@ -28,31 +28,31 @@
 
             <!-- Menú principal -->
             <ul class="navbar-menu" id="navbar-menu">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="index.php">Inicio</a></li>
                 <li class="dropdown">
-                    <a href="#historia">Historia del Saprissa</a>
+                    <a href="historia.php">Historia del Saprissa</a>
                     <ul class="submenu">
-                        <li><a href="#fundacion">Fundación</a></li>
-                        <li><a href="#titulos">Títulos</a></li>
-                        <li><a href="#jugadores-historicos">Jugadores Históricos</a></li>
+                        <li><a href="historia.php#fundacion">Fundación</a></li>
+                        <li><a href="historia.php#titulos">Títulos</a></li>
+                        <li><a href="historia.php#jugadores-historicos">Jugadores Históricos</a></li>
                     </ul>
                 </li>
-                <li><a href="#noticias">Noticias de la S</a></li>
-                <li><a href="#galeria">Fotos y Videos</a></li>
+                <li><a href="noticias.php">Noticias de la S</a></li>
+                <li><a href="galeria.php">Fotos y Videos</a></li>
                 <li class="dropdown">
-                    <a href="#plantilla">Plantilla Actual</a>
+                    <a href="plantilla.php">Plantilla Actual</a>
                     <ul class="submenu">
-                        <li><a href="#jugadores">Jugadores</a></li>
-                        <li><a href="#cuerpo-tecnico">Cuerpo Técnico</a></li>
+                        <li><a href="plantilla.php#jugadores">Jugadores</a></li>
+                        <li><a href="plantilla.php#cuerpo-tecnico">Cuerpo Técnico</a></li>
                     </ul>
                 </li>
-                <li><a href="#ultra-morada">Ultra Morada</a></li>
+                <li><a href="ultra-morada.php">Ultra Morada</a></li>
                 <li class="dropdown">
-                    <a href="#rivalidades">Las Rivalidades</a>
+                    <a href="rivalidades.php">Las Rivalidades</a>
                     <ul class="submenu">
-                        <li><a href="#alajuelense">Alajuelense</a></li>
-                        <li><a href="#herediano">Herediano</a></li>
-                        <li><a href="#otros">Otros</a></li>
+                        <li><a href="rivalidades.php#alajuelense">Alajuelense</a></li>
+                        <li><a href="rivalidades.php#herediano">Herediano</a></li>
+                        <li><a href="rivalidades.php#cartagines">Cartaginés</a></li>
                     </ul>
                 </li>
                 <li><a href="#estadio">Estadio Ricardo Saprissa</a></li>
@@ -71,31 +71,3 @@
         </div>
     </nav>
 
-    <script src="./js/hamburger.js"></script>
-    <script src="./js/accordion.js"></script>
-    <script src="./js/carrusel-fotos.js"></script>
-    <script src="./js/carrusel-videos.js"></script>
-    <script src="./js/tabs.js"></script>
-    <script src="./js/lightbox.js"></script>
-    <script src="./js/lightbox-plantilla.js"></script>
-
-    <!-- Script para el desplazamiento suave -->
-    <script>
-        // Desplazamiento suave para los enlaces del menú
-        document.querySelectorAll('.navbar-menu a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault(); // Evita el comportamiento predeterminado
-                const targetId = this.getAttribute('href'); // Obtiene el ID de la sección
-                const targetSection = document.querySelector(targetId); // Selecciona la sección
-
-                if (targetSection) {
-                    // Desplaza suavemente a la sección
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-
-</body>
