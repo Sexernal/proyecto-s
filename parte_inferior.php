@@ -7,7 +7,6 @@
     <script src="./js/tabs.js"></script>
     <script src="./js/lightbox.js"></script>
     <script src="./js/lightbox-plantilla.js"></script>
-    <script src="./js/tabs-rivalidades.js"></script>
 
     <!-- Script para el desplazamiento suave -->
     <script>

@@ -32,27 +32,23 @@
                 <li class="dropdown">
                     <a href="historia.php">Historia del Saprissa</a>
                     <ul class="submenu">
-                        <li><a href="historia.php#fundacion">Fundación</a></li>
-                        <li><a href="historia.php#titulos">Títulos</a></li>
-                        <li><a href="historia.php#jugadores-historicos">Jugadores Históricos</a></li>
+                        <li><a href="#fundacion">Fundación</a></li>
+                        <li><a href="#titulos">Títulos</a></li>
+                        <li><a href="#jugadores-historicos">Jugadores Históricos</a></li>
                     </ul>
                 </li>
                 <li><a href="noticias.php">Noticias de la S</a></li>
                 <li><a href="galeria.php">Fotos y Videos</a></li>
                 <li class="dropdown">
                     <a href="plantilla.php">Plantilla Actual</a>
-                    <ul class="submenu">
-                        <li><a href="plantilla.php#jugadores">Jugadores</a></li>
-                        <li><a href="plantilla.php#cuerpo-tecnico">Cuerpo Técnico</a></li>
-                    </ul>
                 </li>
                 <li><a href="ultra-morada.php">Ultra Morada</a></li>
                 <li class="dropdown">
                     <a href="rivalidades.php">Las Rivalidades</a>
                     <ul class="submenu">
-                        <li><a href="rivalidades.php#alajuelense">Alajuelense</a></li>
-                        <li><a href="rivalidades.php#herediano">Herediano</a></li>
-                        <li><a href="rivalidades.php#cartagines">Cartaginés</a></li>
+                        <li><a href="#alajuelense">Alajuelense</a></li>
+                        <li><a href="#herediano">Herediano</a></li>
+                        <li><a href="#cartagines">Cartaginés</a></li>
                     </ul>
                 </li>
                 <li><a href="#estadio">Estadio Ricardo Saprissa</a></li>

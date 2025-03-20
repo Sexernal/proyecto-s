@@ -19,16 +19,18 @@
             Con 40 títulos nacionales y múltiples participaciones en torneos internacionales, son el orgullo
             de la afición morada.
         </p>
-        <a href="#historia" class="boton">Conoce nuestra historia</a>
+        <!-- Enlace corregido para redirigir a historia.php -->
+        <a href="historia.php" class="boton">Conoce nuestra historia</a>
     </div>
 
     <!-- Enlaces rápidos -->
     <div class="enlaces-rapidos">
         <h2>Explora nuestra página</h2>
         <div class="botones">
-            <a href="#noticias" class="boton">Noticias</a>
-            <a href="#plantilla" class="boton">Plantilla Actual</a>
-            <a href="#galeria" class="boton">Galería</a>
+            <!-- Enlaces corregidos para redirigir a las páginas correspondientes -->
+            <a href="noticias.php" class="boton">Noticias</a>
+            <a href="plantilla.php" class="boton">Plantilla Actual</a>
+            <a href="galeria.php" class="boton">Galería</a>
         </div>
     </div>
 </section>
