@@ -777,22 +777,43 @@ body {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
-    /* Agrega espacio entre tarjetas */
-    margin-bottom: 30px; 
+    margin-bottom: 30px; /* Espacio entre tarjetas */
 }
 
+/* Estilos para los logos */
 .logo-ligay {
     width: 80px;
     height: auto;
+    flex-shrink: 0;
 }
+
 
 .logo-perredia {
     width: 120px;
     height: auto;
+    flex-shrink: 0;
 }
 
+.logo-cartucho {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+
+/* Estilos para los videos */
+.tarjeta-rivalidad video {
+    width: 100%; /* Ancho fijo */
+    max-width: 300px; /* Tamaño máximo para los videos */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    flex-shrink: 0; /* Evita que el video se reduzca */
+}
+
+/* Contenedor de texto y botón */
 .tarjeta-rivalidad div {
+    flex-grow: 1; /* Permite que el contenido de texto ocupe el espacio restante */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -807,12 +828,6 @@ body {
 .tarjeta-rivalidad p {
     font-size: 1rem;
     color: #555;
-    margin-bottom: 10px;
-}
-
-.tarjeta-rivalidad video {
-    width: 100%;
-    border-radius: 10px;
     margin-bottom: 10px;
 }
 

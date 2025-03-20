@@ -46,11 +46,11 @@
 
         <!-- Tarjeta de Cartaginés -->
         <div id="cartagines" class="tarjeta-rivalidad">
-            <img src="imagen/rivalidades/cartagines.jpg" alt="Cartaginés" class="logo-cartucho">
+            <img src="imagen/rivalidades/cartago.png" alt="Cartaginés" class="logo-cartucho">
             <h3>Cartaginés</h3>
             <p>
-                Es el partido que disputan el Deportivo Saprissa y el Club Sport Cartaginés, llamado así debido a que tanto
-                San José como Cartago han sido capitales del país.
+                Clásico de las metrópolis es el partido que disputan el Deportivo Saprissa y el Club Sport Cartaginés,
+                llamado así debido a que tanto San José como Cartago han sido capitales del país.
             </p>
             <video controls>
                 <source src="videos/rivalidades/cartagines.mp4" type="video/mp4">
