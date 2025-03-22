@@ -43,7 +43,7 @@
 
         <!-- Tarjeta de _erediANO -->
         <div id="herediano" class="tarjeta-rivalidad">
-            <img src="imagen/rivalidades/here2.png" alt="Herediano" class="logo-perredia">
+            <img src="imagen/rivalidades/here3.png" alt="Herediano" class="logo-perredia">
 
             <!-- Contenedor general -->
             <div class="contenido">

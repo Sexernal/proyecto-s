@@ -51,7 +51,7 @@
                         <li><a href="#cartagines">Cartaginés</a></li>
                     </ul>
                 </li>
-                <li><a href="#estadio">Estadio Ricardo Saprissa</a></li>
+                <li><a href="estadio.php">Estadio Ricardo Saprissa</a></li>
                 <li><a href="#canticos">Cánticos y Porras</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <!-- Nuevo elemento "Otros" con submenú -->
