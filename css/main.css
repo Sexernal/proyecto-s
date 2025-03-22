@@ -149,18 +149,21 @@ body {
     text-decoration: underline; /* Subrayado */
 }
 
-/* Ícono de hamburguesa (para móviles) */
+/* Estilos para el botón de hamburguesa */
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    gap: 0.3rem;
+    gap: 0.5rem;
+    padding: 10px;
+    margin-left: 20px; /* Mueve el botón más a la izquierda */
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background: white;
+.hamburger .bar {
+    width: 30px; /* Hacemos las barras más grandes */
+    height: 4px; /* Hacemos las barras más gruesas */
+    background: white; /* Color dorado para las barras */
+    transition: 0.4s;
 }
 
 
@@ -768,69 +771,75 @@ body {
     margin-bottom: 20px;
 }
 
-/* Tarjetas de Rivalidad */
+/* Tarjetas de Rivalidad (contenedor principal) */
 .tarjeta-rivalidad {
     display: flex;
-    align-items: center; /* Alinea verticalmente el contenido */
-    gap: 20px; /* Espacio entre el logo y el texto */
+    align-items: flex-start; /* Logo y contenido alineados arriba */
+    gap: 20px;              /* Espacio entre logo y contenido */
     padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px; /* Espacio entre tarjetas */
+    margin-bottom: 30px;    /* Espacio entre tarjetas */
 }
 
-/* Estilos para los logos */
-.logo-ligay {
-    width: 80px;
+/* Estilos para el logo */
+.tarjeta-rivalidad img {
+    width: 80px;    /* Tamaño fijo para el logo */
     height: auto;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Evita que el logo se reduzca */
 }
 
-
+/* Ejemplo de un logo específico con otro tamaño */
 .logo-perredia {
-    width: 120px;
-    height: auto;
-    flex-shrink: 0;
+    width: 120px;   /* Tamaño específico para el logo de Herediano */
 }
 
-.logo-cartucho {
-    width: 80px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-
-/* Estilos para los videos */
-.tarjeta-rivalidad video {
-    width: 100%; /* Ancho fijo */
-    max-width: 300px; /* Tamaño máximo para los videos */
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    flex-shrink: 0; /* Evita que el video se reduzca */
-}
-
-/* Contenedor de texto y botón */
-.tarjeta-rivalidad div {
-    flex-grow: 1; /* Permite que el contenido de texto ocupe el espacio restante */
+/* Contenedor que envuelve texto y video */
+.tarjeta-rivalidad .contenido {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Texto a la izquierda, video a la derecha */
+    flex-grow: 1;                   /* Ocupará todo el espacio restante */
+    gap: 20px;                      /* Espacio entre texto y video */
 }
 
+/* Contenedor del texto */
+.texto-rivalidad {
+    flex: 1;    /* Se expande ocupando el ancho disponible */
+    text-align: left; /* Para que el texto se alinee a la izquierda */
+}
+
+/* Contenedor del video */
+.video-rivalidad {
+    flex: 0 0 320px; /* Fija un ancho de 320px (puedes ajustarlo) */
+    display: flex;
+    align-items: center; /* Centra verticalmente el iframe */
+    justify-content: center; /* Opcional, si quieres centrar el iframe horizontalmente dentro */
+}
+
+/* Ajuste del iframe de YouTube */
+.video-rivalidad iframe {
+    width: 320px;   /* Coincide con el ancho fijado arriba */
+    height: 180px;  /* Relación 16:9 */
+    border-radius: 10px;
+    border: none;
+}
+
+/* Títulos dentro de la tarjeta */
 .tarjeta-rivalidad h3 {
     font-size: 1.5rem;
     color: #8b0b4a; /* Morado Saprissa */
     margin-bottom: 10px;
 }
 
+/* Texto dentro de la tarjeta */
 .tarjeta-rivalidad p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
 }
 
+/* Botón dentro de la tarjeta */
 .tarjeta-rivalidad .boton {
     background-color: #8b0b4a;
     color: white;
