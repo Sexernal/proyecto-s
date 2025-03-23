@@ -5,45 +5,46 @@
     <div class="estadio-container">
         <h2>Estadio Ricardo Saprissa</h2>
 
+        <!-- Imagen del estadio -->
+        <div class="imagen-estadio-container">
+            <img src="imagen/estadio/estadio" alt="Estadio Ricardo Saprissa" class="imagen-estadio">
+        </div>
+
         <!-- Información General -->
-        <div class="informacion-general">
-            <h3>Información General</h3>
-            <div class="contenido">
-                <!-- Imagen del estadio -->
-                <img src="imagen/estadio/estadio" alt="Estadio Ricardo Saprissa" class="imagen-estadio">
+        <div class="historia">
+            <h3>Historia</h3>
 
-                <!-- Sección 1: Introducción -->
-                <div class="seccion-texto">
-                    <p>
-                        El Estadio Ricardo Saprissa Aymá, conocido cariñosamente como "La Cueva del Monstruo", es un 
-                        recinto futbolístico propiedad del Deportivo Saprissa. Inaugurado el 27 de agosto de 1972, está 
-                        ubicado en el cantón de Tibás, en la provincia de San José, Costa Rica. Este emblemático estadio 
-                        lleva el nombre de Ricardo Saprissa Aymá, uno de los fundadores del equipo, un salvadoreño de 
-                        origen español que vivió gran parte de su vida en Costa Rica.
-                    </p>
-                </div>
+            <!-- Sección 1: Introducción -->
+            <div class="seccion-texto">
+                <p>
+                    El Estadio Ricardo Saprissa Aymá, conocido cariñosamente como "La Cueva del Monstruo", es un 
+                    recinto futbolístico propiedad del Deportivo Saprissa. Inaugurado el 27 de agosto de 1972, está 
+                    ubicado en el cantón de Tibás, en la provincia de San José, Costa Rica. Este emblemático estadio 
+                    lleva el nombre de Ricardo Saprissa Aymá, uno de los fundadores del equipo, un salvadoreño de 
+                    origen español que vivió gran parte de su vida en Costa Rica.
+                </p>
+            </div>
 
-                <!-- Sección 2: Inauguración -->
-                <div class="seccion-texto">
-                    <p>
-                        La construcción del estadio tomó seis años, y su inauguración fue un evento histórico. Ese día, 
-                        se develó una placa en honor a Ricardo Saprissa Aymá y se disputó una cuadrangular internacional 
-                        con la participación del Deportivo Saprissa, la Liga Deportiva Alajuelense, el Comunicaciones de 
-                        Guatemala y el Madureira de Brasil. En el primer partido, Saprissa empató 1-1 con Comunicaciones, 
-                        con goles de Peter Sandoval (Comunicaciones) y Eduardo ‘Flaco’ Chavarría (Saprissa). 
-                        Posteriormente, Saprissa se coronó campeón de la cuadrangular al vencer a Alajuelense (3-0) y a 
-                        Madureira (2-1).
-                    </p>
-                </div>
+            <!-- Sección 2: Inauguración -->
+            <div class="seccion-texto">
+                <p>
+                    La construcción del estadio tomó seis años, y su inauguración fue un evento histórico. Ese día, 
+                    se develó una placa en honor a Ricardo Saprissa Aymá y se disputó una cuadrangular internacional 
+                    con la participación del Deportivo Saprissa, la Liga Deportiva Alajuelense, el Comunicaciones de 
+                    Guatemala y el Madureira de Brasil. En el primer partido, Saprissa empató 1-1 con Comunicaciones, 
+                    con goles de Peter Sandoval (Comunicaciones) y Eduardo ‘Flaco’ Chavarría (Saprissa). 
+                    Posteriormente, Saprissa se coronó campeón de la cuadrangular al vencer a Alajuelense (3-0) y a 
+                    Madureira (2-1).
+                </p>
+            </div>
 
-                <!-- Sección 3: Actualidad -->
-                <div class="seccion-texto">
-                    <p>
-                        Actualmente, el estadio tiene una capacidad aproximada de 21,000 espectadores, lo que lo convierte 
-                        en el segundo más grande de Costa Rica. Además de ser el hogar del Saprissa, ha sido sede de 
-                        importantes eventos internacionales, como el Mundial Femenino Sub-17 en 2014.
-                    </p>
-                </div>
+            <!-- Sección 3: Actualidad -->
+            <div class="seccion-texto">
+                <p>
+                    Actualmente, el estadio tiene una capacidad aproximada de 21,000 espectadores, lo que lo convierte 
+                    en el segundo más grande de Costa Rica. Además de ser el hogar del Saprissa, ha sido sede de 
+                    importantes eventos internacionales, como el Mundial Femenino Sub-17 en 2014.
+                </p>
             </div>
         </div>
 
@@ -88,7 +89,7 @@
         <div class="mapa-ubicacion">
             <h3>Ubicación</h3>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.982715999999!2d-84.076372685222!3d9.935548992899999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3f5b7d7b7b5%3A0x1b8b9b9b9b9b9b9b!2sEstadio%20Ricardo%20Saprissa!5e0!3m2!1ses!2scr!4v1620000000000!5m2!1ses!2scr"
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1964.8106595326103!2d-84.0751519!3d9.9654303!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1742694817281!5m2!1ses-419!2scr"
                 width="100%"
                 height="450"
                 style="border:0;"

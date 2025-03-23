@@ -875,40 +875,40 @@ body {
     margin-bottom: 20px;
 }
 
-/* Información General */
-.informacion-general {
-    margin-bottom: 40px;
-}
-
-.informacion-general h3 {
-    font-size: 2rem;
-    color: #8b0b4a;
+/* Contenedor de la imagen del estadio */
+.imagen-estadio-container {
     margin-bottom: 20px;
 }
 
-.informacion-general .contenido {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-/* Imagen del estadio */
 .imagen-estadio {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Información General */
+.historia {
+    margin-bottom: 40px;
+}
+
+.historia h3 {
+    font-size: 2rem;
+    color: #8b0b4a;
+    margin-bottom: 20px;
+}
+
 /* Secciones de texto */
 .seccion-texto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .seccion-texto:last-child {
