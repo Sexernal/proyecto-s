@@ -1069,6 +1069,108 @@ body {
 
 
 
+/* Estilos para la sección de Cánticos y Porras (Índice) */
+.canticos {
+    padding: 60px 20px;
+    background-color: #d8bfd8; /* Morado claro */
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.canticos h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 20px;
+}
+
+.lista-canticos ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px; /* Limita el ancho de la lista */
+    margin: 0 auto; /* Centra la lista */
+}
+
+.lista-canticos li {
+    margin-bottom: 15px;
+}
+
+.lista-canticos a {
+    display: block; /* Hace que el enlace ocupe toda la línea */
+    background-color: #8b0b4a; /* Morado Saprissa */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.lista-canticos a:hover {
+    background-color: #6a0940; /* Morado más oscuro */
+    transform: translateY(-2px); /* Efecto de elevación */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilos para el símbolo (🎵) */
+.lista-canticos a::before {
+    content: "🎵"; /* Símbolo de música */
+    margin-right: 10px; /* Espacio entre el símbolo y el texto */
+}
+
+/* Estilos para las páginas específicas de cánticos */
+.cantico-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.texto-cantico p {
+    font-size: 1.1rem;
+    color: #8b0b4a;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-cantico iframe {
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* Estilos para el botón de Volver */
+.boton-volver {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.boton-volver .boton {
+    background-color: #8b0b4a; /* Morado Saprissa */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-volver .boton:hover {
+    background-color: #6a0940; /* Morado más oscuro */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+
+
+
+
+
 /* Estilos responsivos del hamburger*/
 @media (max-width: 1350px) {
     .hamburger {

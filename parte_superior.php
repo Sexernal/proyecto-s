@@ -52,7 +52,7 @@
                     </ul>
                 </li>
                 <li><a href="estadio.php">Estadio Ricardo Saprissa</a></li>
-                <li><a href="#canticos">Cánticos y Porras</a></li>
+                <li><a href="canticos.php">Cánticos y Porras</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <!-- Nuevo elemento "Otros" con submenú -->
                 <li class="dropdown">
