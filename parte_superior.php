@@ -53,17 +53,15 @@
                 </li>
                 <li><a href="estadio.php">Estadio Ricardo Saprissa</a></li>
                 <li><a href="canticos.php">Cánticos y Porras</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
                 <!-- Nuevo elemento "Otros" con submenú -->
                 <li class="dropdown">
                     <a href="#otros">Otros</a>
                     <ul class="submenu">
                         <li><a href="#curiosidades">Curiosidades y Datos</a></li>
                         <li><a href="#archivo">Archivo Histórico</a></li>
-                        <li><a href="#redes">Redes Sociales</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
-
