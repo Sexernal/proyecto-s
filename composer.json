@@ -1,0 +1,13 @@
+{
+    "name": "usuario/proyecto-s",
+    "description": "correos con PHPMailer",
+    "authors": [
+        {
+            "name": "Sexernal",
+            "email": "salazarjocksan2005@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

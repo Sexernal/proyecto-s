@@ -1,39 +1,49 @@
 <?php
-header('Content-Type: application/json');
+// Carga el autoload de Composer
+require __DIR__ . '/vendor/autoload.php';
 
-// Configuración
-$destinatario = "salazarjocksan2005@gmail.com"; // Cambia esto
-$asunto = "Mensaje desde la web de Saprissa";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// Validar datos
-if (empty($_POST['nombre']) || empty($_POST['email']) || empty($_POST['mensaje'])) {
-    echo json_encode(['success' => false, 'message' => 'Todos los campos son obligatorios.']);
-    exit;
+try {
+    // 1. Recibir datos del formulario
+    $nombre  = $_POST['nombre'] ?? '';
+    $email   = $_POST['email'] ?? '';
+    $mensaje = $_POST['mensaje'] ?? '';
+
+    // 2. Validar que no estén vacíos
+    if (empty($nombre) || empty($email) || empty($mensaje)) {
+        throw new Exception("Todos los campos son obligatorios.");
+    }
+
+    // 3. Configurar PHPMailer
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com'; 
+    $mail->SMTPAuth   = true;
+    // OJO: si tienes la verificación en 2 pasos, necesitas contraseña de aplicación
+    $mail->Username   = 'salazarjocksan2005@gmail.com';
+    $mail->Password   = 'vhja bctn qaej dwyn';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
+    $mail->Port       = 587;
+
+    // 4. Datos del correo
+    $mail->setFrom('tu_correo@gmail.com', 'Tu Nombre o Empresa');
+    $mail->addAddress('destinatario@ejemplo.com', 'Nombre Destinatario');
+    $mail->Subject = 'Nuevo mensaje de contacto';
+
+    // 5. Construir el cuerpo
+    $mail->isHTML(false); 
+    $cuerpo = "Nombre: $nombre\n";
+    $cuerpo .= "Correo: $email\n";
+    $cuerpo .= "Mensaje:\n$mensaje\n";
+    $mail->Body = $cuerpo;
+
+    // 6. Enviar
+    $mail->send();
+    echo "Mensaje enviado con éxito.";
+
+} catch (Exception $e) {
+    // Mostrar errores
+    echo "Error al enviar el mensaje. Error: {$mail->ErrorInfo}";
 }
-
-if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    echo json_encode(['success' => false, 'message' => 'Correo electrónico no válido.']);
-    exit;
-}
-
-// Sanitizar datos
-$nombre = htmlspecialchars($_POST['nombre']);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$mensaje = htmlspecialchars($_POST['mensaje']);
-
-// Construir el correo
-$contenido = "Nombre: $nombre\n";
-$contenido .= "Email: $email\n\n";
-$contenido .= "Mensaje:\n$mensaje";
-
-$headers = "From: $nombre <$email>";
-
-// Enviar correo
-$envioExitoso = mail($destinatario, $asunto, $contenido, $headers);
-
-if ($envioExitoso) {
-    echo json_encode(['success' => true, 'message' => '¡Mensaje enviado con éxito!']);
-} else {
-    echo json_encode(['success' => false, 'message' => 'Error al enviar. Intenta nuevamente.']);
-}
-?>

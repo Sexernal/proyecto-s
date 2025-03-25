@@ -28,47 +28,6 @@
     });
 </script>
 
-<!-- validacion correo -->
-<script>
-document.getElementById('form-contacto').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const formData = new FormData(this);
-    const boton = this.querySelector('button[type="submit"]');
-    
-    // Mostrar carga
-    boton.textContent = 'Enviando...';
-    boton.disabled = true;
-
-    fetch('enviar.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Crear notificación
-        const notificacion = document.createElement('div');
-        notificacion.className = `notificacion ${data.success ? 'exito' : 'error'}`;
-        notificacion.textContent = data.message;
-        document.body.appendChild(notificacion);
-
-        // Ocultar después de 5 segundos
-        setTimeout(() => {
-            notificacion.style.opacity = '0';
-            setTimeout(() => notificacion.remove(), 500);
-        }, 5000);
-
-        // Resetear si fue exitoso
-        if (data.success) this.reset();
-    })
-    .catch(() => {
-        alert('Error de conexión');
-    })
-    .finally(() => {
-        boton.textContent = 'Enviar Mensaje';
-        boton.disabled = false;
-    });
-});
-</script>
 </body>
 
 </html>
