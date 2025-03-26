@@ -45,13 +45,13 @@
                 <h3>Redes Sociales</h3>
                 <div class="redes-sociales">
                     <a href="https://facebook.com/SaprissaOficial" target="_blank" class="red-social">
-                        <img src="imagen/redes/facebook.png" alt="Facebook"> /SaprissaOficial
+                        <img src="imagen/redes/face" alt="Facebook"> /SaprissaOficial
                     </a>
                     <a href="https://twitter.com/SaprissaOficial" target="_blank" class="red-social">
-                        <img src="imagen/redes/twitter.png" alt="Twitter"> @SaprissaOficial
+                        <img src="imagen/redes/twitter" alt="Twitter"> @SaprissaOficial
                     </a>
-                    <a href="https://instagram.com/SaprissaOficial" target="_blank" class="red-social">
-                        <img src="imagen/redes/instagram.png" alt="Instagram"> @SaprissaOficial
+                    <a href="https://www.instagram.com/deportivo_saprissa/?hl=es" target="_blank" class="red-social">
+                        <img src="imagen/redes/insta2.jpg" alt="Instagram"> @SaprissaOficial
                     </a>
                 </div>
             </div>
@@ -61,7 +61,7 @@
         <div class="whatsapp-container">
             <h3>Chat Directo</h3>
             <a href="https://wa.me/506TU_NUMERO" class="boton whatsapp" target="_blank">
-                <img src="imagen/redes/whatsapp.png" alt="WhatsApp"> WhatsApp
+                <img src="imagen/redes/warap2.webp" alt="WhatsApp"> WhatsApp
             </a>
             <p>Respuesta rápida ⚡</p>
         </div>
