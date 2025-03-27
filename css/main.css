@@ -1197,7 +1197,7 @@ body {
 
 .contacto p {
     font-size: 1.1rem;
-    color: #555;
+    color: #8b0b4a;
     margin-bottom: 30px;
 }
 
@@ -1331,28 +1331,33 @@ body {
 
 
 
-/* Notificaciones */
-.notificacion {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 15px 25px;
+/* Toast base */
+.toast-message {
+    position: fixed;          /* Para que aparezca sobre el contenido */
+    top: 20px;                /* Separación desde arriba */
+    right: 20px;              /* Separación desde la derecha */
+    padding: 12px 20px;
     border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    z-index: 10000;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 9999;            /* Para asegurarte de que esté por encima de todo */
     opacity: 1;
-    transition: opacity 0.5s ease;
-}
-
-.notificacion.exito {
-    background: #4CAF50; /* Verde */
-}
-
-.notificacion.error {
-    background: #F44336; /* Rojo */
-}
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Variantes de color */
+  .toast-message.success {
+    background-color: #2ecc71;  /* Verde */
+  }
+  .toast-message.error {
+    background-color: #e74c3c;  /* Rojo */
+  }
+  
+  /* Clase para desvanecer el toast */
+  .toast-message.fade-out {
+    opacity: 0;
+  }
 
 
 

@@ -6,6 +6,17 @@
         <h2>Contacto</h2>
         <p>¿Tienes preguntas, sugerencias o quieres colaborar? ¡Contáctanos!</p>
 
+        <!-- MOSTRAR MENSAJE TOAST (éxito/error) -->
+        <?php if (isset($_GET['mensaje']) && $_GET['mensaje'] === 'exito'): ?>
+            <div class="toast-message success" id="toast-alert">
+                ¡Mensaje enviado con éxito!
+            </div>
+        <?php elseif (isset($_GET['mensaje']) && $_GET['mensaje'] === 'error'): ?>
+            <div class="toast-message error" id="toast-alert">
+                Hubo un error al enviar el mensaje. Intenta más tarde.
+            </div>
+        <?php endif; ?>
+
         <!-- Tarjetas de Opciones de Contacto -->
         <div class="tarjetas-contacto">
             <!-- Tarjeta 1: Formulario -->
@@ -60,12 +71,31 @@
         <!-- Botón de WhatsApp -->
         <div class="whatsapp-container">
             <h3>Chat Directo</h3>
-            <a href="https://wa.me/506TU_NUMERO" class="boton whatsapp" target="_blank">
+            <a href="https://wa.me/506NUM_INVENTADO" class="boton whatsapp" target="_blank">
                 <img src="imagen/redes/warap2.webp" alt="WhatsApp"> WhatsApp
             </a>
             <p>Respuesta rápida ⚡</p>
         </div>
     </div>
 </section>
+
+<!-- Script para hacer desaparecer el toast a los 3 segundos -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toast = document.getElementById('toast-alert');
+    if (toast) {
+        setTimeout(() => {
+            toast.classList.add('fade-out');
+        }, 3000);
+
+        // Opcional: removerlo del DOM tras la animación
+        setTimeout(() => {
+            if (toast.parentNode) {
+                toast.parentNode.removeChild(toast);
+            }
+        }, 4000);
+    }
+});
+</script>
 
 <?php require_once "./parte_inferior.php" ?>
