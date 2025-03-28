@@ -1,0 +1,202 @@
+/* Estilos para la sección del Estadio Ricardo Saprissa */
+.estadio {
+    padding: 60px 20px;
+    background-color: #d8bfd8; /* Morado claro */
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.estadio h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la imagen del estadio */
+.imagen-estadio-container {
+    margin-bottom: 20px;
+}
+
+.imagen-estadio {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Información General */
+.historia {
+    margin-bottom: 40px;
+}
+
+.historia h3 {
+    font-size: 2rem;
+    color: #8b0b4a;
+    margin-bottom: 20px;
+}
+
+/* Secciones de texto */
+.seccion-texto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.seccion-texto:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior de la última sección */
+}
+
+.seccion-texto p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Galería de Fotos */
+.galeria-estadio {
+    margin-bottom: 40px;
+}
+
+.galeria-estadio h3 {
+    font-size: 2rem;
+    color: #8b0b4a;
+    margin-bottom: 20px;
+}
+
+.galeria-estadio .carrusel-fotos {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.galeria-estadio .carrusel-item {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.galeria-estadio .carrusel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+.galeria-estadio .carrusel-item img {
+    width: 100%;
+    height: auto; /* La altura se ajusta automáticamente */
+    border-radius: 10px 10px 0 0;
+}
+
+.galeria-estadio .carrusel-desc {
+    padding: 15px;
+    background-color: white;
+    font-size: 1.1rem;
+    color: #333;
+    border-radius: 0 0 10px 10px;
+}
+
+.galeria-estadio .prev,
+.galeria-estadio .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.galeria-estadio .prev {
+    left: 10px;
+}
+
+.galeria-estadio .next {
+    right: 10px;
+}
+
+/* Datos Curiosos */
+.datos-curiosos {
+    margin-bottom: 40px;
+}
+
+.datos-curiosos h3 {
+    font-size: 2rem;
+    color: #8b0b4a;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas-curiosos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilos para cada tarjeta */
+.tarjeta-curioso {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-curioso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el ícono */
+.icono-curioso {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el título de la tarjeta */
+.tarjeta-curioso h4 {
+    font-size: 1.5rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 10px;
+}
+
+/* Estilos para el texto de la tarjeta */
+.tarjeta-curioso p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Mapa de Ubicación */
+.mapa-ubicacion {
+    margin-bottom: 40px;
+}
+
+.mapa-ubicacion h3 {
+    font-size: 2rem;
+    color: #8b0b4a;
+    margin-bottom: 20px;
+}
+
+.mapa-ubicacion iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

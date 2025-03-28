@@ -7,6 +7,20 @@
     <link rel="icon" type="image/jpg" href="imagen/mounstro.png">
     <title>Moradictos</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modulos/menu.css">
+    <link rel="stylesheet" href="./css/modulos/inicio.css">
+    <link rel="stylesheet" href="./css/modulos/historia.css">
+    <link rel="stylesheet" href="./css/modulos/noticias.css">
+    <link rel="stylesheet" href="./css/modulos/galeria.css">
+    <link rel="stylesheet" href="./css/modulos/plantilla.css">
+    <link rel="stylesheet" href="./css/modulos/ultra.css">
+    <link rel="stylesheet" href="./css/modulos/rivalidades.css">
+    <link rel="stylesheet" href="./css/modulos/estadio.css">
+    <link rel="stylesheet" href="./css/modulos/canticos.css">
+    <link rel="stylesheet" href="./css/modulos/contacto.css">
+    <link rel="stylesheet" href="./css/modulos/curiosidades.css">
+    <link rel="stylesheet" href="./css/modulos/archivo.css">
+    <link rel="stylesheet" href="./css/modulos/footer.css">
 </head>
 
 <body>
@@ -58,8 +72,8 @@
                 <li class="dropdown">
                     <a href="#otros">Otros</a>
                     <ul class="submenu">
-                        <li><a href="#curiosidades">Curiosidades y Datos</a></li>
-                        <li><a href="#archivo">Archivo Histórico</a></li>
+                        <li><a href="curiosidades.php">Curiosidades y Datos</a></li>
+                        <li><a href="archivo_historico.php">Archivo Histórico</a></li>
                     </ul>
                 </li>
             </ul>

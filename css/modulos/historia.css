@@ -1,0 +1,79 @@
+/* Estilos para la sección de Historia */
+.historia {
+    padding: 60px 20px; /* Más padding para separar las secciones */
+    background-color: #d8bfd8; /* Morado claro (igual que la sección de Inicio) */
+    text-align: center;
+    margin-top: 0px; /* Separación de la sección de Inicio */
+    margin-bottom: 10px; /* Separación de la siguiente sección */
+}
+
+.historia-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.historia h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 20px;
+}
+
+.historia p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Subsecciones */
+.subseccion {
+    margin-bottom: 40px;
+    background-color: white; /* Fondo blanco para las tarjetas */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subseccion:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.subseccion h3 {
+    font-size: 2rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 20px;
+}
+
+.subseccion .contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.subseccion img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.subseccion p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* Estilos responsivos para la sección de Historia */
+@media (max-width: 768px) {
+    .subseccion .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subseccion img {
+        width: 100%;
+        max-width: 300px;
+    }
+}

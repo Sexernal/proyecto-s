@@ -1,0 +1,76 @@
+/* Estilos para la sección de Galería */
+.galeria {
+    padding: 60px 20px;
+    background-color: #d8bfd8; /* Fondo morado claro */
+    text-align: center;
+    margin-top: 0px; /* Separación de la sección anterior */
+    margin-bottom: 40px; /* Separación de la siguiente sección */
+}
+
+.galeria-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 20px;
+}
+
+/* Estilos para los Carruseles */
+.carrusel-fotos, .carrusel-videos {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: white; /* Fondo blanco para los items */
+}
+
+.carrusel-item {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease; /* Transición suave */
+}
+
+.carrusel-item.active {
+    display: block;
+    opacity: 1; /* Mostrar el item activo */
+}
+
+.carrusel-item img, .carrusel-item video {
+    width: 100%;
+    height: 450px; /* Altura fija para todas las imágenes y videos */
+    object-fit: cover; /* Ajusta la imagen/video sin distorsionar */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.carrusel-desc {
+    padding: 15px;
+    background-color: white; /* Fondo blanco para la descripción */
+    font-size: 1.1rem;
+    color: #333;
+    border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
+}
+
+.carrusel-fotos button, .carrusel-videos button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carrusel-fotos .prev, .carrusel-videos .prev {
+    left: 10px;
+}
+
+.carrusel-fotos .next, .carrusel-videos .next {
+    right: 10px;
+}

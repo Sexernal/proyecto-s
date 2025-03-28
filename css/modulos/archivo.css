@@ -1,0 +1,176 @@
+/* --- Estilos para Archivo Histórico --- */
+.archivo-historico {
+    padding: 60px 20px;
+    background-color: #d8bfd8;
+    text-align: center;
+}
+
+.archivo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.archivo-historico h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a;
+    margin-bottom: 10px;
+}
+
+.archivo-historico .intro {
+    font-size: 1.2rem;
+    color: #8b0b4a;
+    margin-bottom: 40px;
+}
+
+/* Línea de Tiempo */
+.linea-tiempo {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.linea-tiempo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: #8b0b4a;
+    z-index: 1;
+}
+
+.decada {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.decada-titulo {
+    background: #8b0b4a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.evento {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.evento:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.fecha {
+    background: #ffd700;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: center;
+    z-index: 2;
+}
+
+.descripcion {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    z-index: 2;
+}
+
+.descripcion h4 {
+    color: #8b0b4a;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.descripcion img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 2px solid #8b0b4a;
+}
+
+/* Estadísticas */
+.estadisticas {
+    margin-top: 50px;
+}
+
+.estadisticas h3 {
+    font-size: 2rem;
+    color: #8b0b4a;
+    margin-bottom: 30px;
+}
+
+.tarjetas-estadisticas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-estadistica {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-estadistica:hover {
+    transform: scale(1.05);
+}
+
+.numero {
+    font-size: 3rem;
+    color: #8b0b4a;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .linea-tiempo::before {
+        left: 20px;
+    }
+
+    .evento, .evento:nth-child(odd) {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .fecha {
+        align-self: flex-start;
+    }
+}

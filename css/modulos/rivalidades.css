@@ -1,0 +1,98 @@
+/* Estilos para la sección de Rivalidades */
+.rivalidades {
+    padding: 60px 20px;
+    background-color: #d8bfd8; /* Morado claro */
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.rivalidades h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 20px;
+}
+
+/* Tarjetas de Rivalidad (contenedor principal) */
+.tarjeta-rivalidad {
+    display: flex;
+    align-items: flex-start; /* Logo y contenido alineados arriba */
+    gap: 20px;              /* Espacio entre logo y contenido */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;    /* Espacio entre tarjetas */
+}
+
+/* Estilos para el logo */
+.tarjeta-rivalidad img {
+    width: 80px;    /* Tamaño fijo para el logo */
+    height: auto;
+    flex-shrink: 0; /* Evita que el logo se reduzca */
+}
+
+/* Ejemplo de un logo específico con otro tamaño */
+.logo-perredia {
+    width: 120px;   /* Tamaño específico para el logo de Herediano */
+}
+
+/* Contenedor que envuelve texto y video */
+.tarjeta-rivalidad .contenido {
+    display: flex;
+    justify-content: space-between; /* Texto a la izquierda, video a la derecha */
+    flex-grow: 1;                   /* Ocupará todo el espacio restante */
+    gap: 20px;                      /* Espacio entre texto y video */
+}
+
+/* Contenedor del texto */
+.texto-rivalidad {
+    flex: 1;    /* Se expande ocupando el ancho disponible */
+    text-align: left; /* Para que el texto se alinee a la izquierda */
+}
+
+/* Contenedor del video */
+.video-rivalidad {
+    flex: 0 0 320px; /* Fija un ancho de 320px (puedes ajustarlo) */
+    display: flex;
+    align-items: center; /* Centra verticalmente el iframe */
+    justify-content: center; /* Opcional, si quieres centrar el iframe horizontalmente dentro */
+}
+
+/* Ajuste del iframe de YouTube */
+.video-rivalidad iframe {
+    width: 320px;   /* Coincide con el ancho fijado arriba */
+    height: 180px;  /* Relación 16:9 */
+    border-radius: 10px;
+    border: none;
+}
+
+/* Títulos dentro de la tarjeta */
+.tarjeta-rivalidad h3 {
+    font-size: 1.5rem;
+    color: #8b0b4a; /* Morado Saprissa */
+    margin-bottom: 10px;
+}
+
+/* Texto dentro de la tarjeta */
+.tarjeta-rivalidad p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Botón dentro de la tarjeta */
+.tarjeta-rivalidad .boton {
+    background-color: #8b0b4a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.tarjeta-rivalidad .boton:hover {
+    background-color: #6a0940; /* Morado más oscuro */
+}

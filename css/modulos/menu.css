@@ -1,0 +1,212 @@
+/* Estilos generales del menú */
+.navbar {
+
+    width: 100%;
+    height: 120px;
+
+    background-color: #8b0b4a; /* Morado Saprissa */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Para posicionar correctamente los submenús */
+    border: 1px solid #ffd700;
+}
+
+/* Estilos para el menú fijo */
+.navbar {
+    position: sticky;
+    top: 0; /* Se pega en la parte superior */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    width: 100%;
+    background-color: #8b0b4a; /* Morado Saprissa */
+    padding: 20px 0;
+    border: 1px solid #ffd700;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho del contenedor */
+    margin: 0; /* Centra el contenedor */
+    margin-right: auto;
+}
+
+.logo img {
+    display: flex;
+    justify-content: flex-start;
+    height: 90px; /* Tamaño del logo */
+    width: auto; /* Mantiene la proporción */
+    transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+    justify-content: flex-start;
+}
+
+/* Efecto de escala al pasar el mouse (opcional) */
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+/* Estilos del menú principal */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+
+    position: relative; /* Asegura que el menú tenga un contexto de apilamiento */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+
+}
+
+.navbar-menu li {
+    position: relative;
+}
+
+.navbar-menu a {
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+    font-size: 17px; /* Tamaño de la letra */
+    letter-spacing: 1px; /* Separación entre letras */
+}
+
+/* Efecto dorado al pasar el mouse */
+.navbar-menu a:hover {
+    color: #ffd700; /* Texto dorado */
+    background-color: transparent; /* Eliminamos el fondo oscuro */
+    text-decoration: underline; /* Subrayado */
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8b0b4a; /* Morado Saprissa */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 100px;
+
+    z-index: 1001; /* Asegura que el submenú esté por encima del menú */
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white; /* Texto blanco */
+}
+
+.submenu li a:hover {
+    color: #ffd700; /* Texto dorado */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Contenido adicional en columnas (solo en escritorio) */
+.contenido-adicional {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.contenido-adicional .columna {
+    display: flex;
+    margin-left: 15px; /* Empuja el bloque a la derecha */
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.contenido-adicional a {
+    color: white; /* Texto blanco */
+    text-decoration: none;
+    font-size: 12px; /* Tamaño de la letra */
+    letter-spacing: auto; /* Separación entre letras */
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.contenido-adicional a:hover {
+    color: #ffd700; /* Texto dorado */
+    text-decoration: underline; /* Subrayado */
+}
+
+/* Estilos para el botón de hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.5rem;
+    padding: 10px;
+    margin-left: 20px; /* Mueve el botón más a la izquierda */
+}
+
+.hamburger .bar {
+    width: 30px; /* Hacemos las barras más grandes */
+    height: 4px; /* Hacemos las barras más gruesas */
+    background: white; /* Color dorado para las barras */
+    transition: 0.4s;
+}
+
+/* Estilos responsivos del hamburger*/
+@media (max-width: 1350px) {
+    .hamburger {
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .navbar-menu, .contenido-adicional {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #8b0b4a; /* Morado Saprissa */
+        position: absolute;
+        top: 120px; /* Coloca el menú debajo del navbar */
+        left: 0;
+        z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+        padding: 10px 0; /* Espaciado interno */
+        transition: all 0.3s ease; /* Transición suave */
+    }
+
+    .navbar-menu.active, .contenido-adicional.active {
+        display: flex;
+    }
+
+    .navbar-menu li, .contenido-adicional a {
+        text-align: center;
+        padding: 15px 0; /* Espaciado vertical */
+    }
+
+    .navbar-menu a {
+        font-size: 25px; /* Tamaño de la letra más grande */
+        letter-spacing: 2px; /* Separación entre letras */
+    }
+
+    .contenido-adicional a {
+        font-size: 25px; /* Tamaño de la letra más pequeño */
+        letter-spacing: 1px; /* Separación entre letras */
+    }
+
+    .contenido-adicional .columna {
+        flex-direction: column; /* En móviles, las columnas se muestran en una lista vertical */
+    }
+
+    /* Submenú en móviles */
+    .submenu {
+        position: static; /* El submenú se muestra como parte del menú principal */
+        background-color: #6a0940; /* Un tono más oscuro para diferenciar */
+    }
+
+    .submenu li a {
+        padding: 10px 20px; /* Espaciado interno */
+    }
+}

@@ -1,0 +1,178 @@
+/* --- Sección Contacto --- */
+.contacto {
+    padding: 60px 20px;
+    background-color: #d8bfd8;
+    text-align: center;
+}
+
+.contacto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contacto p {
+    font-size: 1.1rem;
+    color: #8b0b4a;
+    margin-bottom: 30px;
+}
+
+/* --- Tarjetas --- */
+.tarjetas-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tarjetas-contacto .tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjetas-contacto .tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Formulario --- */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #8b0b4a;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* --- Redes Sociales --- */
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.red-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #8b0b4a;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.red-social:hover {
+    color: white;
+    background-color: #8b0b4a;
+    transform: translateX(5px);
+}
+
+.red-social img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.red-social:hover img {
+    transform: scale(1.1);
+}
+
+/* --- WhatsApp --- */
+.whatsapp-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 30px auto 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-container:hover {
+    transform: scale(1.02);
+}
+
+.boton.whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.boton.whatsapp:hover {
+    background: #128C7E;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(18, 140, 126, 0.3);
+}
+
+.boton.whatsapp img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Toast base */
+.toast-message {
+    position: fixed;          /* Para que aparezca sobre el contenido */
+    top: 20px;                /* Separación desde arriba */
+    right: 20px;              /* Separación desde la derecha */
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 9999;            /* Para asegurarte de que esté por encima de todo */
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Variantes de color */
+  .toast-message.success {
+    background-color: #2ecc71;  /* Verde */
+  }
+  .toast-message.error {
+    background-color: #e74c3c;  /* Rojo */
+  }
+  
+  /* Clase para desvanecer el toast */
+  .toast-message.fade-out {
+    opacity: 0;
+  }

@@ -95,7 +95,7 @@
                 <div class="tarjeta-curioso">
                     <div class="icono-curioso">🏟️</div>
                     <h4>Capacidad</h4>
-                    <p>23,000 espectadores.</p>
+                    <p>21, 300 espectadores.</p>
                 </div>
                 <!-- Tarjeta 2: Inauguración -->
                 <div class="tarjeta-curioso">

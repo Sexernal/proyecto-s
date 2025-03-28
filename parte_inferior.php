@@ -28,6 +28,34 @@
     });
 </script>
 
+<footer class="footer-saprissa">
+    <div class="footer-content">
+        <!-- Logo y texto -->
+        <div class="footer-brand">
+            <img src="imagen/mounstro.png" alt="Saprissa" width="40">
+            <span>Moradictos</span>
+        </div>
+
+        <!-- Enlaces en línea -->
+        <div class="footer-links">
+            <a href="index.php">Inicio</a>
+            <a href="archivo_historico.php">Archivo Historico</a>
+            <a href="plantilla.php">Plantilla</a>
+            <a href="contacto.php">Contacto</a>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <a href="https://www.facebook.com/SaprissaOficial" target="_blank"><img src="imagen/redes/face" alt="FB" width="20"></a>
+            <a href="https://twitter.com/SaprissaOficial" target="_blank"><img src="imagen/redes/twitter" alt="TW" width="20"></a>
+            <a href="https://www.instagram.com/deportivo_saprissa/" target="_blank"><img src="imagen/redes/insta3.png" alt="IG" width="20"></a>
+            <a href="https://www.youtube.com/@SaprissaCanalOficial" target="_blank"><img src="imagen/redes/youtube.webp" alt="YT" width="20"></a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="footer-copy">© 2025 Moradictos. Orgullosamente Morados.</p>
+    </div>
+</footer>
 </body>
 
 </html>

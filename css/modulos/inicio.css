@@ -1,0 +1,141 @@
+/* Estilos para la sección de Inicio */
+.inicio {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Banner destacado */
+.banner {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    width: 50%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 0;
+    border: 2px solid black;
+    box-shadow: 3px 3px 10px 0 black;
+}
+
+.banner img:hover{
+    transform: scale(1.01);
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+}
+
+/* Breve resumen sobre el equipo */
+.resumen {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.resumen h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8b0b4a; /* Morado Saprissa */
+}
+
+.resumen p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resumen .boton {
+    background-color: #8b0b4a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.resumen .boton:hover {
+    background-color: #6a0940; /* Morado más oscuro */
+    transform: scale(1.1) translateY(-5px); /* Escala y mueve el botón */
+}
+
+/* Enlaces rápidos */
+.enlaces-rapidos {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.enlaces-rapidos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8b0b4a; /* Morado Saprissa */
+}
+
+.enlaces-rapidos .botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.enlaces-rapidos .boton {
+    background-color: #8b0b4a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.enlaces-rapidos .boton:hover {
+    background-color: #6a0940; /* Morado más oscuro */
+    transform: scale(1.01) translateY(-5px);
+}
+
+
+/* Estilos responsivos para la sección de Inicio */
+@media (max-width: 768px) {
+
+    .inicio {
+        margin-top: 60px; /* Margen más pequeño en móviles */
+    }
+
+    .banner-texto h1 {
+        font-size: 2rem;
+    }
+
+    .banner-texto p {
+        font-size: 1rem;
+    }
+
+    .resumen h2, .enlaces-rapidos h2 {
+        font-size: 1.5rem;
+    }
+
+    .resumen p {
+        font-size: 1rem;
+    }
+
+    .enlaces-rapidos .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,109 @@
+/* --- Estilos para Curiosidades --- */
+.curiosidades {
+    padding: 60px 20px;
+    background-color: #d8bfd8;
+    text-align: center;
+}
+
+.curiosidades-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.curiosidades h2 {
+    font-size: 2.5rem;
+    color: #8b0b4a;
+    margin-bottom: 10px;
+}
+
+.curiosidades .intro {
+    font-size: 1.2rem;
+    color: #8b0b4a;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas de Curiosidades */
+.tarjetas-curiosidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.tarjeta-curiosidad {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-curiosidad:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-curiosidad .icono {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta-curiosidad h3 {
+    font-size: 1.5rem;
+    color: #8b0b4a;
+    margin-bottom: 15px;
+}
+
+.tarjeta-curiosidad p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.tarjeta-curiosidad img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 2px solid #8b0b4a;
+}
+
+/* Sección "Sabías que..." */
+.sabias-que {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sabias-que h3 {
+    font-size: 2rem;
+    color: #8b0b4a;
+    margin-bottom: 20px;
+}
+
+.lista-sabias ul {
+    list-style: none;
+    text-align: left;
+}
+
+.lista-sabias li {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    position: relative;
+    padding-left: 25px;
+}
+
+.lista-sabias li:before {
+    content: "⚽";
+    position: absolute;
+    left: 0;
+    color: #8b0b4a;
+}
+
+.lista-sabias li strong {
+    color: #8b0b4a;
+}
