@@ -7,6 +7,13 @@
     margin-bottom: 40px; /* Separación de la siguiente sección */
 }
 
+/* Clear fix para asegurar que no queden floats pendientes que afecten al footer */
+.noticias::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .noticias-container {
     max-width: 1200px; /* Limita el ancho del contenedor */
     margin: 0 auto; /* Centra el contenedor */
@@ -46,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 .accordion-button span {
@@ -78,4 +86,19 @@
 /* Estilo para el accordion activo */
 .tab-active .accordion-content {
     display: block;
+}
+
+/* Ajustes responsivos para la sección de Noticias y footer */
+@media (max-width: 768px) {
+    .noticias-container {
+        padding: 0 15px;
+    }
+    
+    /* Si el footer no se acomoda bien, se fuerza a ocupar el 100% y se centraliza el contenido */
+    footer {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
 }

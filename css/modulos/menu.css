@@ -1,9 +1,7 @@
 /* Estilos generales del menú */
 .navbar {
-
     width: 100%;
     height: 120px;
-
     background-color: #8b0b4a; /* Morado Saprissa */
     padding: 20px 0;
     display: flex;
@@ -11,17 +9,10 @@
     align-items: center;
     position: relative; /* Para posicionar correctamente los submenús */
     border: 1px solid #ffd700;
-}
-
-/* Estilos para el menú fijo */
-.navbar {
     position: sticky;
     top: 0; /* Se pega en la parte superior */
     z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
-    width: 100%;
-    background-color: #8b0b4a; /* Morado Saprissa */
-    padding: 20px 0;
-    border: 1px solid #ffd700;
+    background: linear-gradient(135deg, #8b0b4a, #a5115a); /* Gradiente sutil para más profundidad */
 }
 
 .navbar-container {
@@ -43,7 +34,6 @@
     justify-content: flex-start;
 }
 
-/* Efecto de escala al pasar el mouse (opcional) */
 .logo img:hover {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
 }
@@ -55,14 +45,13 @@
     margin: 0;
     padding: 0;
     gap: 15px;
-
     position: relative; /* Asegura que el menú tenga un contexto de apilamiento */
     z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
-
 }
 
 .navbar-menu li {
     position: relative;
+    list-style: none; /* Elimina viñetas */
 }
 
 .navbar-menu a {
@@ -70,16 +59,16 @@
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-    transition: color 0.3s ease; /* Transición suave para el color del texto */
+    transition: color 0.3s ease, background-color 0.3s ease;
     font-size: 17px; /* Tamaño de la letra */
     letter-spacing: 1px; /* Separación entre letras */
 }
 
-/* Efecto dorado al pasar el mouse */
+/* Efecto dorado al pasar el mouse: resalta el fondo y subraya */
 .navbar-menu a:hover {
     color: #ffd700; /* Texto dorado */
-    background-color: transparent; /* Eliminamos el fondo oscuro */
-    text-decoration: underline; /* Subrayado */
+    background-color: rgba(255, 215, 0, 0.2); /* Fondo sutil dorado */
+    text-decoration: underline;
 }
 
 /* Submenú */
@@ -93,47 +82,28 @@
     padding: 0;
     margin: 0;
     min-width: 100px;
-
     z-index: 1001; /* Asegura que el submenú esté por encima del menú */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-5px); /* Sutil efecto de desplazamiento */
+    border: 1px solid #ffd700;
 }
 
 .submenu li a {
     padding: 10px;
     color: white; /* Texto blanco */
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .submenu li a:hover {
     color: #ffd700; /* Texto dorado */
+    background-color: rgba(255, 215, 0, 0.2);
+    text-decoration: underline;
 }
 
 .dropdown:hover .submenu {
     display: block;
-}
-
-/* Contenido adicional en columnas (solo en escritorio) */
-.contenido-adicional {
-    display: flex;
-    gap: 20px; /* Espacio entre las columnas */
-}
-
-.contenido-adicional .columna {
-    display: flex;
-    margin-left: 15px; /* Empuja el bloque a la derecha */
-    flex-direction: column;
-    gap: 10px; /* Espacio entre los elementos */
-}
-
-.contenido-adicional a {
-    color: white; /* Texto blanco */
-    text-decoration: none;
-    font-size: 12px; /* Tamaño de la letra */
-    letter-spacing: auto; /* Separación entre letras */
-    transition: color 0.3s ease; /* Transición suave para el color del texto */
-}
-
-.contenido-adicional a:hover {
-    color: #ffd700; /* Texto dorado */
-    text-decoration: underline; /* Subrayado */
+    opacity: 1;
+    transform: translateY(0); /* Se posiciona sin desplazamiento */
 }
 
 /* Estilos para el botón de hamburguesa */
@@ -149,64 +119,51 @@
 .hamburger .bar {
     width: 30px; /* Hacemos las barras más grandes */
     height: 4px; /* Hacemos las barras más gruesas */
-    background: white; /* Color dorado para las barras */
+    background: white; /* Color blanco */
     transition: 0.4s;
 }
 
-/* Estilos responsivos del hamburger*/
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
+    /* Aseguramos que el botón hamburger se muestre y esté por encima del menú */
     .hamburger {
-        width: 40px;
-        height: 30px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
+        z-index: 1001;
     }
-
-    .navbar-menu, .contenido-adicional {
-        display: none;
+    /* Menú móvil: se desliza desde la derecha, inicia más abajo para dejar visible el hamburger */
+    .navbar-menu {
+        position: fixed;
+        top: 80px; /* Ajusta este valor según la altura del header y para que el hamburger quede visible */
+        right: -100%;
+        width: 250px;
+        background-color: #8b0b4a;
         flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        gap: 10px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        /* Se ajusta la altura al contenido */
+        height: auto;
+    }
+    .navbar-menu.active {
+        right: 0;
+    }
+    .navbar-menu li {
         width: 100%;
-        background-color: #8b0b4a; /* Morado Saprissa */
-        position: absolute;
-        top: 120px; /* Coloca el menú debajo del navbar */
-        left: 0;
-        z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
-        padding: 10px 0; /* Espaciado interno */
-        transition: all 0.3s ease; /* Transición suave */
     }
-
-    .navbar-menu.active, .contenido-adicional.active {
-        display: flex;
-    }
-
-    .navbar-menu li, .contenido-adicional a {
-        text-align: center;
-        padding: 15px 0; /* Espaciado vertical */
-    }
-
     .navbar-menu a {
-        font-size: 25px; /* Tamaño de la letra más grande */
-        letter-spacing: 2px; /* Separación entre letras */
+        width: 100%;
+        padding: 10px 0;
     }
-
-    .contenido-adicional a {
-        font-size: 25px; /* Tamaño de la letra más pequeño */
-        letter-spacing: 1px; /* Separación entre letras */
-    }
-
-    .contenido-adicional .columna {
-        flex-direction: column; /* En móviles, las columnas se muestran en una lista vertical */
-    }
-
-    /* Submenú en móviles */
     .submenu {
-        position: static; /* El submenú se muestra como parte del menú principal */
-        background-color: #6a0940; /* Un tono más oscuro para diferenciar */
-    }
-
-    .submenu li a {
-        padding: 10px 20px; /* Espaciado interno */
+        position: relative;
+        top: 0;
+        left: 0;
+        border: none;
+        box-shadow: none;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+        display: none; /* Mantener submenú oculto, puedes implementar su despliegue con JS si lo deseas */
     }
 }
