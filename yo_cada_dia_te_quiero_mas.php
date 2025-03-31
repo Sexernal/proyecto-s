@@ -6,13 +6,13 @@
         <h2>Yo cada día te quiero más</h2>
 
         <!-- Contenedor del cántico -->
-        <div class="cantico-container">
+        <div class="cantico-container animate__animated animate__fadeInUp">
             <div class="texto-cantico">
                 <p>
                     Ole ole ole<br>
                     ole ole ole ola SAPRISSA<br>
                     ole ole ole<br>
-                    yo cada día te quiero mas,<br>
+                    Yo cada día te quiero más,<br>
                     yo soy morado, es un sentimiento, no puedo parar.
                 </p>
             </div>

@@ -6,7 +6,7 @@
         <h2>Para Ser Campeon</h2>
 
         <!-- Contenedor del cántico -->
-        <div class="cantico-container">
+        <div class="cantico-container animate__animated animate__fadeInUp">
             <div class="texto-cantico">
                 <p>
                     Dale dale dale oh,<br>

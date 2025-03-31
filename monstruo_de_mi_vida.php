@@ -6,7 +6,7 @@
         <h2>Monstruo de mi vida</h2>
 
         <!-- Contenedor del cántico -->
-        <div class="cantico-container">
+        <div class="cantico-container animate__animated animate__fadeInUp">
             <div class="texto-cantico">
                 <p>
                     monstruo, monstruo de mi vida<br>

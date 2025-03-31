@@ -6,7 +6,7 @@
         <h2>En Costa Rica hay una banda que la mas loca de todas</h2>
 
         <!-- Contenedor del cántico -->
-        <div class="cantico-container">
+        <div class="cantico-container animate__animated animate__fadeInUp">
             <div class="texto-cantico">
                 <p>
                     En Costa Rica hay una banda que es la mas loca de todas<br>

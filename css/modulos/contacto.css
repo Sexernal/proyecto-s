@@ -3,6 +3,7 @@
     padding: 60px 20px;
     background-color: #d8bfd8;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contacto-container {
@@ -11,10 +12,12 @@
 }
 
 .contacto h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #8b0b4a;
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .contacto p {
@@ -23,7 +26,7 @@
     margin-bottom: 30px;
 }
 
-/* --- Tarjetas --- */
+/* --- Tarjetas de Contacto --- */
 .tarjetas-contacto {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +36,7 @@
 }
 
 .tarjetas-contacto .tarjeta {
-    background: white;
+    background: #fff;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -60,12 +63,13 @@
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #8b0b4a;
+    box-shadow: 0 0 8px rgba(139, 11, 74, 0.2);
     outline: none;
 }
 
@@ -89,12 +93,12 @@
     text-decoration: none;
     padding: 10px;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .red-social:hover {
-    color: white;
     background-color: #8b0b4a;
+    color: #fff;
     transform: translateX(5px);
 }
 
@@ -110,7 +114,7 @@
 
 /* --- WhatsApp --- */
 .whatsapp-container {
-    background: white;
+    background: #fff;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -126,7 +130,7 @@
 
 .boton.whatsapp {
     background: #25D366;
-    color: white;
+    color: #fff;
     padding: 12px 25px;
     font-size: 1.1rem;
     display: inline-flex;
@@ -134,7 +138,7 @@
     gap: 10px;
     margin: 10px 0;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boton.whatsapp:hover {
@@ -148,31 +152,74 @@
     height: 30px;
 }
 
-
-/* Toast base */
+/* --- Toast --- */
 .toast-message {
-    position: fixed;          /* Para que aparezca sobre el contenido */
-    top: 20px;                /* Separación desde arriba */
-    right: 20px;              /* Separación desde la derecha */
+    position: fixed;
+    top: 20px;
+    right: 20px;
     padding: 12px 20px;
     border-radius: 8px;
     color: #fff;
     font-size: 16px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    z-index: 9999;            /* Para asegurarte de que esté por encima de todo */
+    z-index: 9999;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-  }
-  
-  /* Variantes de color */
-  .toast-message.success {
-    background-color: #2ecc71;  /* Verde */
-  }
-  .toast-message.error {
-    background-color: #e74c3c;  /* Rojo */
-  }
-  
-  /* Clase para desvanecer el toast */
-  .toast-message.fade-out {
+}
+
+.toast-message.success {
+    background-color: #2ecc71;
+}
+
+.toast-message.error {
+    background-color: #e74c3c;
+}
+
+.toast-message.fade-out {
     opacity: 0;
-  }
+}
+
+/* --- Botón de Volver --- */
+.boton-volver {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-volver .boton {
+    background-color: #8b0b4a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-volver .boton:hover {
+    background-color: #6a0940;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* --- Responsividad --- */
+@media (max-width: 768px) {
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .redes-sociales {
+        align-items: center;
+    }
+    .red-social {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .whatsapp-container {
+        padding: 20px;
+    }
+    .boton.whatsapp {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

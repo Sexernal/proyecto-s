@@ -155,12 +155,12 @@
             </iframe>
         </div>
     </div>
-</section>
 
-<!-- Lightbox para Estadio -->
-<div id="lightbox-estadio" class="lightbox">
-    <span class="cerrar-lightbox-estadio">&times;</span>
-    <img class="lightbox-contenido" id="lightbox-imagen-estadio">
-</div>
+    <!-- Lightbox para Estadio -->
+    <div id="lightbox-estadio" class="lightbox">
+        <span class="cerrar-lightbox-estadio">&times;</span>
+        <img class="lightbox-contenido" id="lightbox-imagen-estadio">
+    </div>
+</section>
 
 <?php require_once "./parte_inferior.php" ?>

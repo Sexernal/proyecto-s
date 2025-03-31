@@ -6,7 +6,7 @@
         <h2>Tenes que salir campeon este es el año</h2>
 
         <!-- Contenedor del cántico -->
-        <div class="cantico-container">
+        <div class="cantico-container animate__animated animate__fadeInUp">
             <div class="texto-cantico">
                 <p>
                     Tenes que salir campeon este es el año,<br>

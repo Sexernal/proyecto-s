@@ -309,4 +309,10 @@
     </div>
 </section>
 
+<!-- Lightbox para Archivo Histórico -->
+<div id="lightbox-archivo" class="lightbox">
+    <span class="cerrar-lightbox-archivo">&times;</span>
+    <img class="lightbox-contenido" id="lightbox-imagen-archivo">
+</div>
+
 <?php require_once "./parte_inferior.php" ?>

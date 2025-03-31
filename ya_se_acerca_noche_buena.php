@@ -6,7 +6,7 @@
         <h2>Ya se acerca noche buena</h2>
 
         <!-- Contenedor del cántico -->
-        <div class="cantico-container">
+        <div class="cantico-container animate__animated animate__fadeInUp">
             <div class="texto-cantico">
                 <p>
                     ya se acerca noche buena,<br>

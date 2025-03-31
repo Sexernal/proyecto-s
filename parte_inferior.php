@@ -8,6 +8,8 @@
 <script src="./js/carrusel-estadio.js"></script>
 <script src="./js/lightbox-estadio.js"></script>
 <script src="./js/lightbox-galeria.js"></script>
+<script src="./js/lightbox-curiosidades.js"></script>
+<script src="./js/lightbox-archivo.js"></script>
 
 <!-- Script para el desplazamiento suave -->
 <script>

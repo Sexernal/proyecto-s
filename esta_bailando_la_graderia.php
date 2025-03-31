@@ -6,7 +6,7 @@
         <h2>Esta bailando la gradería</h2>
 
         <!-- Contenedor del cántico -->
-        <div class="cantico-container">
+        <div class="cantico-container animate__animated animate__fadeInUp">
             <div class="texto-cantico">
                 <p>
                     Y ven a ver como se mueve,<br>

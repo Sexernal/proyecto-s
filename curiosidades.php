@@ -38,16 +38,23 @@
             <h3>¿Sabías que...?</h3>
             <div class="lista-sabias">
                 <ul>
-                    <li>El apodo "Monstruo Morado" nació en el año 1987 el diario La Extra de Costa Rica tituló en una de sus 
+                    <li>El apodo "Monstruo Morado" nació en el año 1987 el diario La Extra de Costa Rica tituló en una de sus
                         portadas haciendo alusión a su estadio, al que asociaban con un monstruo, el Monstruo Morado, por sus colores..</li>
                     <li>Ricardo Saprissa (fundador) era <strong>salvadoreño</strong> nacionalizó costarricense y español.</li>
-                    <li>El estadio se construyó en <strong>6 años</strong> y un domingo 27 de agosto de 1972 se develó la placa en honor 
+                    <li>El estadio se construyó en <strong>6 años</strong> y un domingo 27 de agosto de 1972 se develó la placa en honor
                         a Ricardo Saprissa Aymá</li>
                     <li>El jugador con más goles es Evaristo Coronado con <strong>164 goles</strong>.</li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <!-- Lightbox para Curiosidades -->
+    <div id="lightbox-curiosidades" class="lightbox">
+        <span class="cerrar-lightbox-curiosidades">&times;</span>
+        <img class="lightbox-contenido" id="lightbox-imagen-curiosidades">
+    </div>
 </section>
+
 
 <?php require_once "./parte_inferior.php" ?>

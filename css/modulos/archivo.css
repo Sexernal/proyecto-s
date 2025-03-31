@@ -1,8 +1,10 @@
 /* --- Estilos para Archivo Histórico --- */
 .archivo-historico {
     padding: 60px 20px;
-    background-color: #d8bfd8;
+    /* Degradado sutil para dar profundidad */
+    background: linear-gradient(135deg, #d8bfd8, #e8c9e8);
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .archivo-container {
@@ -11,22 +13,26 @@
 }
 
 .archivo-historico h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #8b0b4a;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .archivo-historico .intro {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #8b0b4a;
     margin-bottom: 40px;
 }
 
-/* Línea de Tiempo */
+/* --- Línea de Tiempo --- */
 .linea-tiempo {
     position: relative;
     max-width: 900px;
     margin: 0 auto 50px;
+    padding: 20px 0;
 }
 
 .linea-tiempo::before {
@@ -38,44 +44,63 @@
     width: 4px;
     height: 100%;
     background: #8b0b4a;
-    z-index: 1;
+    z-index: 0;
 }
 
+/* Cada década */
 .decada {
     margin-bottom: 40px;
     position: relative;
 }
 
+/* Título de cada década */
 .decada-titulo {
     background: #8b0b4a;
-    color: white;
+    color: #fff;
     padding: 10px 20px;
     border-radius: 30px;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
+/* Contenedor de eventos */
 .eventos {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
+/* Cada evento en la línea de tiempo */
 .evento {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: eventoAppear 0.6s forwards;
+    z-index: 2; /* Más alto que la línea */
 }
 
+@keyframes eventoAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Para eventos impares: invertir dirección */
 .evento:nth-child(odd) {
     flex-direction: row-reverse;
     text-align: right;
 }
 
+/* Fecha del evento */
 .fecha {
     background: #ffd700;
     color: #333;
@@ -85,15 +110,24 @@
     min-width: 80px;
     text-align: center;
     z-index: 2;
+    flex-shrink: 0;
 }
 
+/* Descripción del evento */
 .descripcion {
-    background: white;
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
     z-index: 2;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.descripcion:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .descripcion h4 {
@@ -106,6 +140,7 @@
     color: #555;
     font-size: 1.1rem;
     margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 .descripcion img {
@@ -113,17 +148,24 @@
     border-radius: 8px;
     margin-top: 10px;
     border: 2px solid #8b0b4a;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-/* Estadísticas */
+.descripcion img:hover {
+    transform: scale(1.03);
+    border-color: #6a0940;
+}
+
+/* --- Estadísticas Destacadas --- */
 .estadisticas {
     margin-top: 50px;
 }
 
 .estadisticas h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #8b0b4a;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .tarjetas-estadisticas {
@@ -134,12 +176,12 @@
 }
 
 .tarjeta-estadistica {
-    background: white;
+    background: #fff;
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-width: 150px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta-estadistica:hover {
@@ -158,19 +200,79 @@
 }
 
 
+/* Lightbox para Archivo Histórico */
+#lightbox-archivo {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    animation: fadeInLightbox 0.4s ease-in-out;
+}
 
-/* Responsive */
+#lightbox-archivo .lightbox-contenido {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.cerrar-lightbox-archivo {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cerrar-lightbox-archivo:hover {
+    color: #8b0b4a;
+}
+
+@keyframes fadeInLightbox {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    #lightbox-archivo .lightbox-contenido {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+/* --- Responsividad --- */
 @media (max-width: 768px) {
     .linea-tiempo::before {
         left: 20px;
     }
-
     .evento, .evento:nth-child(odd) {
         flex-direction: column;
         text-align: left;
     }
-
     .fecha {
         align-self: flex-start;
+    }
+    .decada-titulo {
+        font-size: 1.3rem;
+        padding: 8px 16px;
+    }
+    .descripcion p, .descripcion h4 {
+        font-size: 1rem;
+    }
+    .numero {
+        font-size: 2.5rem;
+    }
+    .texto {
+        font-size: 1rem;
     }
 }

@@ -3,16 +3,20 @@
     padding: 60px 20px;
     background-color: #d8bfd8; /* Morado claro */
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .canticos h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #8b0b4a; /* Morado Saprissa */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
+/* Lista de enlaces */
 .lista-canticos ul {
     list-style: none;
     padding: 0;
@@ -24,38 +28,57 @@
     margin-bottom: 15px;
 }
 
+/* Enlaces (tarjetas) */
 .lista-canticos a {
-    display: block; /* Hace que el enlace ocupe toda la línea */
+    display: block; /* Ocupa toda la línea */
     background-color: #8b0b4a; /* Morado Saprissa */
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 5px;
     font-size: 1.2rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left; /* Alinea el texto a la izquierda */
+    position: relative;
+    overflow: hidden;
 }
 
+/* Efecto hover */
 .lista-canticos a:hover {
     background-color: #6a0940; /* Morado más oscuro */
-    transform: translateY(-2px); /* Efecto de elevación */
-    text-decoration: none; /* Elimina el subrayado */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para el símbolo (🎵) */
+/* Agregar el ícono musical al inicio */
 .lista-canticos a::before {
     content: "🎵"; /* Símbolo de música */
-    margin-right: 10px; /* Espacio entre el símbolo y el texto */
+    margin-right: 10px;
+    font-size: 1.2rem;
+    vertical-align: middle;
 }
 
 /* Estilos para las páginas específicas de cánticos */
 .cantico-container {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: center;
+    /* Animación de entrada personalizada (opcional) */
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .texto-cantico p {
@@ -71,26 +94,58 @@
     height: 500px;
     border-radius: 10px;
     border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-
-/* Estilos para el botón de Volver */
+/* Botón de Volver */
 .boton-volver {
-    text-align: center; /* Centra el botón */
-    margin-top: 20px; /* Espacio superior */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .boton-volver .boton {
-    background-color: #8b0b4a; /* Morado Saprissa */
-    color: white;
+    background-color: #8b0b4a;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boton-volver .boton:hover {
-    background-color: #6a0940; /* Morado más oscuro */
-    transform: translateY(-2px); /* Efecto de elevación */
+    background-color: #6a0940;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .lista-canticos a {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para el contenedor del cántico */
+    .cantico-container {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* Ajustes para el texto */
+    .texto-cantico p {
+        font-size: 1rem;       /* Disminuir un poco la fuente */
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+
+    /* Ajustes para el video */
+    .video-cantico iframe {
+        width: 100%;           /* Ocupa todo el ancho */
+        height: auto;          /* Altura automática para mantener proporción */
+        min-height: 200px;     /* Un mínimo para que no se haga muy pequeño */
+        max-height: 350px;     /* Limita la altura para pantallas muy largas */
+    }
 }
