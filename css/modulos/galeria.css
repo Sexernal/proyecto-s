@@ -3,8 +3,9 @@
     padding: 60px 20px;
     background-color: #d8bfd8; /* Fondo morado claro */
     text-align: center;
-    margin-top: 0px; /* Separación de la sección anterior */
-    margin-bottom: 40px; /* Separación de la siguiente sección */
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .galeria-container {
@@ -12,65 +13,149 @@
     margin: 0 auto;
 }
 
+/* Títulos de sección */
 .galeria h2 {
-    font-size: 2.5rem;
-    color: #8b0b4a; /* Morado Saprissa */
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    color: #8b0b4a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Estilos para los Carruseles */
+/* Carruseles */
 .carrusel-fotos, .carrusel-videos {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    background-color: white; /* Fondo blanco para los items */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
 }
 
+/* Elementos del carrusel */
 .carrusel-item {
     display: none;
     width: 100%;
-    transition: opacity 0.5s ease; /* Transición suave */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
 }
 
 .carrusel-item.active {
     display: block;
-    opacity: 1; /* Mostrar el item activo */
+    opacity: 1;
+    transform: scale(1);
 }
 
+/* Efecto hover para fotos y videos */
 .carrusel-item img, .carrusel-item video {
     width: 100%;
-    height: 450px; /* Altura fija para todas las imágenes y videos */
-    object-fit: cover; /* Ajusta la imagen/video sin distorsionar */
-    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.4s ease;
+}
+.carrusel-item img:hover, .carrusel-item video:hover {
+    transform: scale(1.03);
 }
 
+/* Descripción */
 .carrusel-desc {
     padding: 15px;
-    background-color: white; /* Fondo blanco para la descripción */
-    font-size: 1.1rem;
-    color: #333;
-    border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
+    background: linear-gradient(90deg, rgba(139,11,74,0.9) 0%, rgba(165,17,90,0.9) 100%);
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border-radius: 0 0 10px 10px;
+    transition: background 0.3s ease;
+}
+.carrusel-desc p {
+    margin: 0;
 }
 
+/* Botones de navegación */
 .carrusel-fotos button, .carrusel-videos button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
     border: none;
-    padding: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 10;
 }
-
+.carrusel-fotos button:hover, .carrusel-videos button:hover {
+    background-color: rgba(0,0,0,0.8);
+    transform: translateY(-50%) scale(1.05);
+}
 .carrusel-fotos .prev, .carrusel-videos .prev {
-    left: 10px;
+    left: 15px;
+}
+.carrusel-fotos .next, .carrusel-videos .next {
+    right: 15px;
 }
 
-.carrusel-fotos .next, .carrusel-videos .next {
-    right: 10px;
+/* Lightbox para Fotos */
+#lightbox-fotos {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    animation: fadeInLightbox 0.4s ease-in-out;
+}
+
+#lightbox-fotos .lightbox-contenido {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.cerrar-lightbox-fotos {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cerrar-lightbox-fotos:hover {
+    color: #8b0b4a;
+}
+
+@keyframes fadeInLightbox {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .carrusel-item img, .carrusel-item video {
+        height: 300px;
+    }
+    .carrusel-desc {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .carrusel-fotos button, .carrusel-videos button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+    #lightbox-fotos .lightbox-contenido {
+        max-width: 90%;
+        max-height: 90%;
+    }
 }

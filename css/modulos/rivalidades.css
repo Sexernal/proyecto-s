@@ -3,96 +3,137 @@
     padding: 60px 20px;
     background-color: #d8bfd8; /* Morado claro */
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .rivalidades h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #8b0b4a; /* Morado Saprissa */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Tarjetas de Rivalidad (contenedor principal) */
+/* Contenedor principal de las tarjetas */
+.rivalidades-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjetas de Rivalidad */
 .tarjeta-rivalidad {
     display: flex;
-    align-items: flex-start; /* Logo y contenido alineados arriba */
-    gap: 20px;              /* Espacio entre logo y contenido */
+    align-items: flex-start;
+    gap: 20px;
     padding: 20px;
-    background: white;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;    /* Espacio entre tarjetas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta-rivalidad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos para el logo */
 .tarjeta-rivalidad img {
-    width: 80px;    /* Tamaño fijo para el logo */
+    width: 80px;
     height: auto;
-    flex-shrink: 0; /* Evita que el logo se reduzca */
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+.tarjeta-rivalidad img:hover {
+    transform: scale(1.1);
 }
 
-/* Ejemplo de un logo específico con otro tamaño */
+/* Logos específicos */
 .logo-perredia {
-    width: 120px;   /* Tamaño específico para el logo de Herediano */
+    width: 120px;
+}
+.logo-cartucho {
+    width: 100px;
 }
 
-/* Contenedor que envuelve texto y video */
+/* Contenedor de contenido (texto y video) */
 .tarjeta-rivalidad .contenido {
     display: flex;
-    justify-content: space-between; /* Texto a la izquierda, video a la derecha */
-    flex-grow: 1;                   /* Ocupará todo el espacio restante */
-    gap: 20px;                      /* Espacio entre texto y video */
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Contenedor del texto */
 .texto-rivalidad {
-    flex: 1;    /* Se expande ocupando el ancho disponible */
-    text-align: left; /* Para que el texto se alinee a la izquierda */
+    flex: 1;
+    text-align: left;
 }
-
-/* Contenedor del video */
-.video-rivalidad {
-    flex: 0 0 320px; /* Fija un ancho de 320px (puedes ajustarlo) */
-    display: flex;
-    align-items: center; /* Centra verticalmente el iframe */
-    justify-content: center; /* Opcional, si quieres centrar el iframe horizontalmente dentro */
-}
-
-/* Ajuste del iframe de YouTube */
-.video-rivalidad iframe {
-    width: 320px;   /* Coincide con el ancho fijado arriba */
-    height: 180px;  /* Relación 16:9 */
-    border-radius: 10px;
-    border: none;
-}
-
-/* Títulos dentro de la tarjeta */
-.tarjeta-rivalidad h3 {
-    font-size: 1.5rem;
-    color: #8b0b4a; /* Morado Saprissa */
+.texto-rivalidad h3 {
+    font-size: 1.8rem;
+    color: #8b0b4a;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-
-/* Texto dentro de la tarjeta */
-.tarjeta-rivalidad p {
+.texto-rivalidad p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
 }
 
-/* Botón dentro de la tarjeta */
+/* Botón en la tarjeta */
 .tarjeta-rivalidad .boton {
     background-color: #8b0b4a;
-    color: white;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     display: inline-block;
     margin-top: 10px;
 }
-
 .tarjeta-rivalidad .boton:hover {
-    background-color: #6a0940; /* Morado más oscuro */
+    background-color: #6a0940;
+    transform: scale(1.05);
+}
+
+/* Contenedor del video */
+.video-rivalidad {
+    flex: 0 0 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-rivalidad iframe {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .tarjeta-rivalidad {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenido {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .video-rivalidad {
+        flex: 1;
+    }
+    .video-rivalidad iframe {
+        width: 100%;
+        height: auto;
+    }
+    .texto-rivalidad {
+        text-align: center;
+    }
 }

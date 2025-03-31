@@ -68,7 +68,7 @@
 .navbar-menu a:hover {
     color: #ffd700; /* Texto dorado */
     background-color: rgba(255, 215, 0, 0.2); /* Fondo sutil dorado */
-    text-decoration: underline;
+    
 }
 
 /* Submenú */
@@ -97,7 +97,7 @@
 .submenu li a:hover {
     color: #ffd700; /* Texto dorado */
     background-color: rgba(255, 215, 0, 0.2);
-    text-decoration: underline;
+    
 }
 
 .dropdown:hover .submenu {

@@ -12,10 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         function showItem(index) {
             items.forEach((item, i) => {
-                item.classList.remove('active');
-                if (i === index) {
-                    item.classList.add('active');
-                }
+                item.classList.toggle('active', i === index);
             });
         }
 
@@ -31,19 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         function startAutoChange() {
             if (intervalTime) {
-                autoChangeInterval = setInterval(() => {
-                    nextItem();
-                }, intervalTime);
+                autoChangeInterval = setInterval(nextItem, intervalTime);
             }
         }
 
-        // Agregar controles manuales
+        // Controles manuales
         const prevButton = carrusel.querySelector('.prev');
         const nextButton = carrusel.querySelector('.next');
 
         if (prevButton && nextButton) {
             prevButton.addEventListener('click', () => {
-                clearInterval(autoChangeInterval); // Se reinicia el intervalo
+                clearInterval(autoChangeInterval);
                 prevItem();
                 startAutoChange();
             });
@@ -54,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
-        // Iniciar el carrusel
+        // Iniciar carrusel
         showItem(currentIndex);
         startAutoChange();
     }

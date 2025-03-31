@@ -7,6 +7,7 @@
 <script src="./js/lightbox-plantilla.js"></script>
 <script src="./js/carrusel-estadio.js"></script>
 <script src="./js/lightbox-estadio.js"></script>
+<script src="./js/lightbox-galeria.js"></script>
 
 <!-- Script para el desplazamiento suave -->
 <script>

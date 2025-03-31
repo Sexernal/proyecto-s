@@ -5,6 +5,7 @@
     text-align: center; /* Centra el contenido */
     margin-top: 40px; /* Separación de la sección anterior */
     margin-bottom: 40px; /* Separación de la siguiente sección */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Clear fix para asegurar que no queden floats pendientes que afecten al footer */
@@ -24,6 +25,7 @@
     color: #8b0b4a; /* Color morado Saprissa */
     margin-bottom: 20px; /* Espaciado inferior */
     font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase;
 }
 
 
