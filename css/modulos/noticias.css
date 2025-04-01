@@ -1,3 +1,15 @@
+/* Keyframes para animación suave */
+@keyframes fadeInUpSoft {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Estilos para la sección de Noticias */
 .noticias {
     padding: 60px 20px; /* Espaciado interno */
@@ -18,6 +30,7 @@
 .noticias-container {
     max-width: 1200px; /* Limita el ancho del contenedor */
     margin: 0 auto; /* Centra el contenedor */
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 .noticias h2 {
@@ -26,8 +39,8 @@
     margin-bottom: 20px; /* Espaciado inferior */
     font-weight: bold; /* Texto en negrita */
     text-transform: uppercase;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
-
 
 /* Estilos para el Accordion */
 .accordion {
@@ -41,6 +54,8 @@
     margin-bottom: 10px;
     border-radius: 5px;
     overflow: hidden;
+    /* Opcional: si deseas animar cada item al aparecer, podrías agregar: */
+    animation: fadeInUpSoft 0.5s ease-out;
 }
 
 .accordion-button {

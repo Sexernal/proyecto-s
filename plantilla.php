@@ -43,7 +43,7 @@
             </div>
             <div class="tarjeta">
                 <img src="imagen/jugadores/anderson" alt="central titular" class="imagen-galeria-plantilla">
-                <h3>Eduardo Anderson</h3>
+                <h3>Anderson</h3>
                 <p>Posición: Defensa Central</p>
                 <p>Número: 16</p>
                 <p>Edad: 24 años</p>
@@ -234,7 +234,7 @@
             <div class="tarjeta">
                 <img src="imagen/cuerpo-tecnico/daniel" alt="Acondicionamiento Físico" class="imagen-galeria-plantilla">
                 <h3>Daniel Torres</h3>
-                <p>Rol: Acondicionamiento Físico</p>
+                <p>Rol: Acondicionamiento</p>
                 <p>Edad: 47 años</p>
             </div>
             <div class="tarjeta">

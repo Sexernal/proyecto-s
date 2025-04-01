@@ -1,3 +1,15 @@
+/* Keyframes para animación suave */
+@keyframes fadeInUpSoft {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Estilos para la sección de Galería */
 .galeria {
     padding: 60px 20px;
@@ -6,6 +18,8 @@
     margin-top: 0;
     margin-bottom: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Aplica la animación al cargar la sección */
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 .galeria-container {
@@ -20,17 +34,20 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 /* Carruseles */
 .carrusel-fotos, .carrusel-videos {
     position: relative;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
     background-color: #fff;
+    /* Animación suave para el carrusel */
+    animation: fadeInUpSoft 0.9s ease-out;
 }
 
 /* Elementos del carrusel */
