@@ -1,14 +1,28 @@
+/* Keyframes para animación suave */
+@keyframes fadeInUpSoft {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* --- Sección Contacto --- */
 .contacto {
     padding: 60px 20px;
     background-color: #d8bfd8;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 .contacto-container {
     max-width: 1200px;
     margin: 0 auto;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 .contacto h2 {
@@ -18,12 +32,14 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 .contacto p {
     font-size: 1.1rem;
     color: #8b0b4a;
     margin-bottom: 30px;
+    animation: fadeInUpSoft 0.9s ease-out;
 }
 
 /* --- Tarjetas de Contacto --- */
@@ -33,6 +49,7 @@
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
+    animation: fadeInUpSoft 1s ease-out;
 }
 
 .tarjetas-contacto .tarjeta {
@@ -43,6 +60,7 @@
     flex: 1;
     min-width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUpSoft 1s ease-out;
 }
 
 .tarjetas-contacto .tarjeta:hover {
@@ -54,6 +72,7 @@
 .form-group {
     margin-bottom: 20px;
     text-align: left;
+    animation: fadeInUpSoft 1.1s ease-out;
 }
 
 .form-group input,
@@ -83,6 +102,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    animation: fadeInUpSoft 1.2s ease-out;
 }
 
 .red-social {
@@ -122,6 +142,7 @@
     margin: 30px auto 0;
     text-align: center;
     transition: transform 0.3s ease;
+    animation: fadeInUpSoft 1.3s ease-out;
 }
 
 .whatsapp-container:hover {
@@ -183,6 +204,7 @@
 .boton-volver {
     text-align: center;
     margin-top: 20px;
+    animation: fadeInUpSoft 1.1s ease-out;
 }
 
 .boton-volver .boton {

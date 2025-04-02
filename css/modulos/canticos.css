@@ -1,3 +1,15 @@
+/* Keyframes para animación suave */
+@keyframes fadeInUpSoft {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Estilos para la sección de Cánticos y Porras (Índice) */
 .canticos {
     padding: 60px 20px;
@@ -6,6 +18,7 @@
     margin-top: 0;
     margin-bottom: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 .canticos h2 {
@@ -14,6 +27,7 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 /* Lista de enlaces */
@@ -22,6 +36,7 @@
     padding: 0;
     max-width: 800px; /* Limita el ancho de la lista */
     margin: 0 auto; /* Centra la lista */
+    animation: fadeInUpSoft 0.9s ease-out;
 }
 
 .lista-canticos li {
@@ -41,6 +56,7 @@
     text-align: left; /* Alinea el texto a la izquierda */
     position: relative;
     overflow: hidden;
+    animation: fadeInUpSoft 1s ease-out;
 }
 
 /* Efecto hover */

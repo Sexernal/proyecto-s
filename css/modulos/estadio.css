@@ -1,3 +1,15 @@
+/* Keyframes para animación suave */
+@keyframes fadeInUpSoft {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Estilos para la sección del Estadio Ricardo Saprissa */
 .estadio {
     padding: 60px 20px;
@@ -6,6 +18,13 @@
     margin-top: 0;
     margin-bottom: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInUpSoft 0.8s ease-out;
+}
+
+.estadio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 .estadio h2 {
@@ -14,11 +33,13 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: fadeInUpSoft 0.8s ease-out;
 }
 
 /* Imagen del estadio */
 .imagen-estadio-container {
     margin-bottom: 30px;
+    animation: fadeInUpSoft 0.9s ease-out;
 }
 .imagen-estadio {
     width: 100%;
@@ -38,6 +59,7 @@
 .historia {
     margin-bottom: 40px;
     text-align: left;
+    animation: fadeInUpSoft 1s ease-out;
 }
 .historia h3 {
     font-size: 2rem;
@@ -45,6 +67,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    animation: fadeInUpSoft 1s ease-out;
 }
 
 /* Secciones de texto */
@@ -55,6 +78,7 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUpSoft 1s ease-out;
 }
 .seccion-texto:hover {
     transform: translateY(-3px);
@@ -70,6 +94,7 @@
 /* Galería de Fotos (Carrusel) */
 .galeria-estadio {
     margin-bottom: 40px;
+    animation: fadeInUpSoft 1.1s ease-out;
 }
 .galeria-estadio h3 {
     font-size: 2rem;
@@ -77,6 +102,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    animation: fadeInUpSoft 1.1s ease-out;
 }
 .galeria-estadio .carrusel-fotos {
     position: relative;
@@ -86,6 +112,7 @@
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
     background-color: #fff;
+    animation: fadeInUpSoft 1.2s ease-out;
 }
 .galeria-estadio .carrusel-item {
     display: none;
@@ -135,6 +162,7 @@
 /* Datos Curiosos */
 .datos-curiosos {
     margin-bottom: 40px;
+    animation: fadeInUpSoft 1.2s ease-out;
 }
 .datos-curiosos h3 {
     font-size: 2rem;
@@ -148,6 +176,7 @@
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    animation: fadeInUpSoft 1.3s ease-out;
 }
 .tarjeta-curioso {
     background-color: #fff;
@@ -179,6 +208,7 @@
 /* Mapa de Ubicación */
 .mapa-ubicacion {
     margin-bottom: 40px;
+    animation: fadeInUpSoft 1.4s ease-out;
 }
 .mapa-ubicacion h3 {
     font-size: 2rem;
